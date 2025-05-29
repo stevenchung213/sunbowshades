@@ -1,3 +1,6 @@
 #documents_container {
-  /* display: flex; */
+  display: flex;
+  width: 100%;
+  padding: 1rem 15rem;
+
 }

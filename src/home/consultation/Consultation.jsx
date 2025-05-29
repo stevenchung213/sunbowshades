@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
-import stock5 from './../assets/stock5.jpeg';
-import showcase7 from './../assets/showcase7.jpeg';
+import stock5 from './../../assets/stock5.jpeg';
+import showcase7 from './../../assets/showcase7.jpeg';
 
 const Consultation = () => {
 

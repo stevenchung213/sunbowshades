@@ -7,8 +7,7 @@ const Terms = () => {
       <h1>Terms of Use Agreement for SunbowShades</h1>
       <p>
         Welcome to our website at www.sunbowshades.com.
-        By accessing or using this site, you agree to be
-        bound by the following Terms of Use Agreement. If you do not agree with any part of these terms, we encourage you to refrain from using our site.
+        By accessing or using this site, you agree to be bound by the following Terms of Use Agreement. If you do not agree with any part of these terms, we encourage you to refrain from using our site.
       </p>
       <br />
       <h3>
@@ -76,13 +75,13 @@ const Terms = () => {
         record for users.
         <br />
         <br />
-        Thank you for choosing SunbowShades. Enjoy your experience with our services and site features!
+        This Terms of Use Agreement is designed to protect both parties and ensure clarity in the use of personal information and intellectual property rights.
       </p>
       <br />
       <br />
       <p>
         <i className='terms_of_use_end'>
-          This Terms of Use Agreement is designed to protect both parties and ensure clarity in the use of personal information and intellectual property rights.
+          Thank you for choosing SunbowShades. Enjoy your experience with our services and site features!
         </i>
       </p>
     </div>

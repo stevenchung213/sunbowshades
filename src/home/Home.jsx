@@ -1,8 +1,9 @@
 import React, { lazy, Suspense } from 'react';
 import styles from './styles.css';
 
-const Quality = lazy(() => import('./Quality'));
-const Consultation = lazy(() => import('./Consultation'));
+const Quality = lazy(() => import('./quality/Quality'));
+const Consultation = lazy(() => import('./consultation/Consultation'));
+const Showcase = lazy(() => import('./showcase/Showcase'));
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
           Where Quality and Comfort Meets Style in Every Window
         </div>
       </div>
+      <Showcase />
       <Consultation />
       <Quality />
     </div>

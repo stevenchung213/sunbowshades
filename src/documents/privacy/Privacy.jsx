@@ -146,8 +146,8 @@ const PrivacyPolicy = () => {
       <p>
         <br />
         <br />
-        Thank you for trusting SunbowShades with your personal information. We are committed to
-        protecting it and ensuring transparency in how we use it.
+        <i>Thank you for trusting SunbowShades with your personal information. We are committed to
+          protecting it and ensuring transparency in how we use it.</i>
       </p>
       <br />
       <br />

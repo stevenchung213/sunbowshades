@@ -60,7 +60,7 @@ const Footer = ({ handleLinkClick }) => {
                         <div
                           key={linkIndex}
                           className='footer_section_link'
-                          style={{ fontStyle: 'italic' }}
+                          style={{ fontStyle: 'italic', cursor: 'default' }}
                         >
                           {
                             link.text
@@ -71,7 +71,7 @@ const Footer = ({ handleLinkClick }) => {
                       ( // render social media icons
                         // TODO
                         // add links to social media pages (new tab)
-                        <li key={linkIndex} className='footer_section_link'>
+                        <li key={linkIndex} className='footer_section_link unclickable'>
                           {
                             link.text
                           }
@@ -82,22 +82,50 @@ const Footer = ({ handleLinkClick }) => {
                           />
                         </li>
                       )
-                  )
-                    : // render standard footer items
-                    item.links.map((link, linkIndex) =>
-                    (
-                      <li
-                        key={linkIndex}
-                        className='footer_section_link'
-                        onClick={() => handleLinkClick({ view: 'Documents', type: link })}
-                      >
-                        {
-                          link
-                        }
-                      </li>
+                  ) // contact us section link handling
+                    : item.section === 'Contact Us' ? item.links.map((link, linkIndex) =>
+                      // email link
+                      linkIndex === 0 ?
+                        (
+                          <div
+                            key={linkIndex}
+                            className='footer_section_link email_link'
+                          >
+                            {
+                              link
+                            }
+                          </div>
+                        ) : // phone link
+                        (
+                          <div
+                            key={linkIndex}
+                            className='footer_section_link'
+                          >
+                            <a
+                              href='tel:13235775705'
+                              className='phone_link'
+                            >
+                              {
+                                link
+                              }
+                            </a>
+                          </div>
+                        )
                     )
-                    )
-
+                      : // render all other standard footer items
+                      item.links.map((link, linkIndex) =>
+                      (
+                        <li
+                          key={linkIndex}
+                          className='footer_section_link'
+                          onClick={() => handleLinkClick({ view: 'Documents', type: link })}
+                        >
+                          {
+                            link
+                          }
+                        </li>
+                      )
+                      )
                 }
               </ul>
             </div>

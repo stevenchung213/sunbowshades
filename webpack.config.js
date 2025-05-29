@@ -4,21 +4,16 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== "production";
 
-console.log(devMode)
 module.exports = {
   mode: devMode ? "development" : "production",
-
   devServer: {
     hot: true,
-
     client: {
       logging: "error",
       overlay: true,
     },
   },
-
   entry: ["./src/index.jsx"],
-
   module: {
     rules: [
       {
@@ -59,7 +54,6 @@ module.exports = {
       },
     ],
   },
-
   plugins: [
     devMode && new ReactRefreshPlugin(),
     new HtmlWebpackPlugin({
@@ -67,11 +61,9 @@ module.exports = {
       template: "./public/index.html",
     }),
   ].filter(Boolean),
-
   resolve: {
     extensions: [".js", ".jsx"],
   },
-
   output: {
     // publicPath: 'auto'
   }
