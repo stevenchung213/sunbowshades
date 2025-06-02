@@ -14,8 +14,8 @@ const Home = () => {
         </div>
       </div>
       <Showcase />
-      <Consultation />
       <Quality />
+      <Consultation />
     </div>
   );
 };

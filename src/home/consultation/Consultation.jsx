@@ -40,21 +40,19 @@ const Consultation = () => {
           <div className='areas_of_service'>
             We provide services in...
           </div>
-          <ol>
-            <li>California</li>
-            <li>
-              Portland
-            </li>
-            <li>
-              Seattle
-            </li>
-            <li>
-              Las Vegas
-            </li>
-            <li>
+          <li>Southern California</li>
+          <li>
+            Portland
+          </li>
+          <li>
+            Seattle
+          </li>
+          <li>
+            Las Vegas
+          </li>
+          {/* <li>
               Houston
-            </li>
-          </ol>
+            </li> */}
           <div className='fine_print'>
             We plan on expanding to other states soon!
           </div>

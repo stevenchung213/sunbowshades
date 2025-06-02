@@ -40,6 +40,8 @@ const App = () => {
       // set state for which type of document
       setCurrentDoc(page.type);
     }
+
+    window.scrollTo(0, 0);
   };
 
   return (

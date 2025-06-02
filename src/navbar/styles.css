@@ -16,13 +16,11 @@
   display: flex;
   align-items: center;
   height: 2rem;
-  /* font-style: italic; */
 }
 
 .logo {
   height: 4rem;
   margin-left: 2px;
-  /* margin-right: 1px; */
 }
 
 .navbar_links_container {
@@ -35,6 +33,7 @@
 
 .navbar_link_container {
   height: 2rem;
+  margin: 0 1rem;
 }
 
 .navbar_link {
@@ -47,7 +46,6 @@
 }
 
 .navbar_link:hover {
-  /* color: black */
   font-weight: bold;
 }
 

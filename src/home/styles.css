@@ -30,3 +30,19 @@
     opacity: 1;
   }
 }
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  height: 7rem;
+  align-items: center;
+  background-color: transparent;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin: auto;
+  text-shadow: rgb(177, 177, 177) 6px 4px 10px;
+  color: rgb(90, 89, 89);
+}

@@ -21,7 +21,6 @@ const EmblaCarousel = (props) => {
     onNextButtonClick
   } = usePrevNextButtons(emblaApi);
 
-  console.log(slides)
   return (
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>

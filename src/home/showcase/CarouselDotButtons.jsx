@@ -9,9 +9,7 @@ export const useDotButton = (emblaApi) => {
     if (!emblaApi) return;
 
     emblaApi.scrollTo(index);
-  },
-    [emblaApi]
-  );
+  }, [emblaApi]);
 
   const onInit = useCallback((emblaApi) => {
     setScrollSnaps(emblaApi.scrollSnapList());

@@ -3,7 +3,7 @@ import styles from './styles.css';
 import logo from './../assets/logo.png';
 
 const Navbar = ({ handleLinkClick }) => {
-  const links = ['Home', 'Products', 'Catalog', 'About Us'];
+  const links = ['Home', 'Products', 'About Us'];
   return (
     <div className='navbar_container'>
       <div className='navbar_logo_container'>
@@ -21,7 +21,7 @@ const Navbar = ({ handleLinkClick }) => {
               >
                 <a className='navbar_link'>{link}</a>
               </div>
-            ) : // 
+            ) :
               (
                 <div
                   key={index}
@@ -34,7 +34,12 @@ const Navbar = ({ handleLinkClick }) => {
         }
       </div >
       <div className='navbar_contact_button_container'>
-        <button className='navbar_contact_button'>Contact</button>
+        <button
+          className='navbar_contact_button'
+          onClick={() => handleLinkClick('Email')}
+        >
+          Contact
+        </button>
       </div>
     </div >
   );

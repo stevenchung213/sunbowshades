@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from './Carousel';
-import banded_biskara from './../../assets/banded_biskara.jpeg';
 import banded_black_cottage from './../../assets/banded_black_cottage.jpeg';
 import banded_crosse from './../../assets/banded_crosse.jpeg';
 import banded_diego from './../../assets/banded_diego.jpeg';
@@ -15,25 +14,24 @@ import styles from './styles.css';
 
 const Showcase = () => {
 
-  const carouselOptions = { align: 'start' };
+  const carouselOptions = { align: 'start', loop: true };
   const bandedStyles = [
-    banded_biskara,
     banded_black_cottage,
     banded_crosse,
     banded_diego,
     banded_manresa_wide,
     banded_manresa,
+    banded_yola,
     banded_nias,
     banded_omaha,
     banded_rumoi_blackout,
     banded_valleta_blackout_onetone,
-    banded_yola
   ];
 
   return (
     <div className='showcase_container'>
       <div className='banner'>
-        The Latest Trends
+        The Latest Trend - Banded Shades
       </div>
       <Carousel slides={bandedStyles} options={carouselOptions} />
     </div>
