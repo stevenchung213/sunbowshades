@@ -1,12 +1,18 @@
 import React from "react";
 import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router";
 import Navbar from "./navbar/Navbar";
 import Catalog from './catalog/Catalog';
 import Footer from "./footer/Footer";
 import Home from "./home/Home";
 import Products from "./products/Products";
-import About from './documents/about/About';
 import Documents from './documents/Documents';
+import About from './documents/about/About';
+import Privacy from "./documents/privacy/Privacy";
+import Terms from "./documents/terms/Terms";
+import Commercial from "./documents/commercial/Commercial";
+import Faqs from "./documents/faq/Faq";
+import Contact from './contact/Contact';
 
 const App = () => {
   const [homePage, setHomePage] = useState(true);
@@ -47,14 +53,31 @@ const App = () => {
   return (
     <div id='app_container'>
       <Navbar handleLinkClick={handleLinkClick} />
-      <div id='view_container'>
-        {
-          homePage ? <Home /> :
-            productsPage ? <Products /> :
-              catalogPage ? <Catalog /> :
-                documentPage ? <Documents currentDoc={currentDoc} /> : null
-        }
-      </div>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path='products' element={<Products />} />
+        {/* <Route path='catalog' element={<Catalog />} /> */}
+        <Route path='documents'>
+          <Route index element={<Documents currentDoc={currentDoc} />} />
+          <Route path='about' element={<About />} />
+          <Route path='privacy_policy' element={<Privacy />} />
+          <Route path='terms_of_use' element={<Terms />} />
+          <Route path='faqs' element={<Faqs />} />
+          <Route path='commercial' element={<Commercial />} />
+          {/* <Route path='' element={} /> */}
+          {/* <Route path='' element={} /> */}
+          {/* <Route path='' element={} /> */}
+        </Route>
+        <Route path='contact' element={<Contact />} />
+        {/* <main id='view_container'>
+          {
+            homePage ? <Home /> :
+              productsPage ? <Products /> :
+                catalogPage ? <Catalog /> :
+                  documentPage ? <Documents currentDoc={currentDoc} /> : null
+          }
+        </main> */}
+      </Routes>
       <Footer handleLinkClick={handleLinkClick} />
     </div>
   );

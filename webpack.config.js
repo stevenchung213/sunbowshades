@@ -8,6 +8,7 @@ module.exports = {
   mode: devMode ? "development" : "production",
   devServer: {
     hot: true,
+    historyApiFallback: true,
     client: {
       logging: "error",
       overlay: true,

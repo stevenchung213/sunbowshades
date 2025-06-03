@@ -13,7 +13,7 @@ const Consultation = () => {
       <div className='our_model_container'>
         <div className='what_we_do'>
           <div className='our_team_will'>
-            Our team will provide...
+            Our experts provide...
           </div>
           <ol>
             <li>

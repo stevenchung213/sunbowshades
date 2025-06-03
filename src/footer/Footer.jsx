@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import facebook from './../assets/facebook.png';
 import instagram from './../assets/instagram.png';
 import tiktok from './../assets/tiktok.png';
@@ -10,14 +11,14 @@ const Footer = ({ handleLinkClick }) => {
     {
       section: 'Customer Support',
       links: [
-        'Frequently Asked Questions',
-        'Commercial Inquiries',
+        { text: 'Frequently Asked Questions', link: 'documents/faqs' },
+        { text: 'Commercial Inquiries', link: 'documents/commercial' }
       ]
     },
     {
       section: 'About Us',
       links: [
-        'Our Team & Vision'
+        { text: 'Our Team & Vision', link: 'documents/about' }
       ]
     },
     {
@@ -32,21 +33,21 @@ const Footer = ({ handleLinkClick }) => {
     {
       section: 'Contact Us',
       links: [
-        'Email',
-        'Phone',
+        { text: 'Email', link: 'email' },
+        { text: 'Phone (323) 577-5705', link: 'phone' }
       ]
     },
     {
       section: 'Legal Information',
       links: [
-        'Privacy Policy',
-        'Terms of Use'
+        { text: 'Privacy Policy', link: 'documents/privacy_policy' },
+        { text: 'Terms of Use', link: 'documents/terms_of_use' }
       ]
     }
   ];
 
   return (
-    <div className='footer_container'>
+    <footer className='footer_container'>
       {
         footerItems.map((item, index) => {
           return (
@@ -85,16 +86,17 @@ const Footer = ({ handleLinkClick }) => {
                   ) // contact us section link handling
                     : item.section === 'Contact Us' ? item.links.map((link, linkIndex) =>
                       // email link
-                      linkIndex === 0 ?
+                      link.text === 'Email' ?
                         (
-                          <div
+                          <Link
+                            to='contact'
                             key={linkIndex}
                             className='footer_section_link email_link'
                           >
                             {
-                              link
+                              link.text
                             }
-                          </div>
+                          </Link>
                         ) : // phone link
                         (
                           <div
@@ -106,7 +108,7 @@ const Footer = ({ handleLinkClick }) => {
                               className='phone_link'
                             >
                               {
-                                link
+                                link.text
                               }
                             </a>
                           </div>
@@ -115,15 +117,16 @@ const Footer = ({ handleLinkClick }) => {
                       : // render all other standard footer items
                       item.links.map((link, linkIndex) =>
                       (
-                        <li
+                        <Link
+                          to={link.link}
                           key={linkIndex}
                           className='footer_section_link'
                           onClick={() => handleLinkClick({ view: 'Documents', type: link })}
                         >
                           {
-                            link
+                            link.text
                           }
-                        </li>
+                        </Link>
                       )
                       )
                 }
@@ -132,7 +135,7 @@ const Footer = ({ handleLinkClick }) => {
           );
         })
       }
-    </div>
+    </footer>
   );
 };
 
