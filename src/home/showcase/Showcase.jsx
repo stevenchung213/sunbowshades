@@ -10,7 +10,7 @@ import banded_omaha from './../../assets/banded_omaha.jpeg';
 import banded_rumoi_blackout from './../../assets/banded_rumoi_black_out.jpeg';
 import banded_valleta_blackout_onetone from './../../assets/banded_valleta_black_out_one_tone.jpeg';
 import banded_yola from './../../assets/banded_yola.jpeg';
-import styles from './styles.css';
+import './styles.css';
 
 const Showcase = () => {
 
@@ -29,7 +29,7 @@ const Showcase = () => {
   ];
 
   return (
-    <div className='showcase_container'>
+    <div id='showcase_container'>
       <div className='banner'>
         The Latest Trend, Banded Shades
       </div>

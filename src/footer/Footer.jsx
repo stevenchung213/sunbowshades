@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import facebook from './../assets/facebook.png';
 import instagram from './../assets/instagram.png';
 import tiktok from './../assets/tiktok.png';
-import styles from './styles.css';
+import './styles.css';
 
 const Footer = () => {
 
@@ -46,7 +46,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className='footer_container'>
+    <footer id='footer_container'>
       {
         footerItems.map((item, index) => {
           return (

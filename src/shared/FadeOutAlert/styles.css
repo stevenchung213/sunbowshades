@@ -1,0 +1,46 @@
+.alert_message {
+  color: rgb(90, 89, 89);
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgb(255, 153, 153);
+  height: 3rem;
+  margin: 0 14rem 0.2rem 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.close_button {
+  margin-left: 1rem;
+  color: white;
+  font-weight: 900;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close_button:hover {
+  color: rgb(99, 99, 99);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

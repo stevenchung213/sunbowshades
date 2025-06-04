@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import styles from './styles.css';
+import './styles.css';
 
 const NotFound = () => {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const NotFound = () => {
   }, [navigate]);
 
   return (
-    <div className='not_found_container'>
+    <div id='not_found_container'>
       <h1 className='banner'>404 - Page Not Found</h1>
       <div>How did we get here?</div>
       <div>Redirecting in 3 seconds...</div>

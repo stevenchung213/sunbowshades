@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.css';
+import './styles.css';
 import showcase1 from './../../assets/showcase1.jpeg'
 import showcase2 from './../../assets/showcase2.jpeg'
 import showcase3 from './../../assets/showcase3.jpeg'
@@ -7,7 +7,7 @@ import showcase3 from './../../assets/showcase3.jpeg'
 const Quality = () => {
 
   return (
-    <div className='quality_showcase_container'>
+    <div id='quality_showcase_container'>
       <div className='banner'>
         Affordable Quality, Built to Last
       </div>

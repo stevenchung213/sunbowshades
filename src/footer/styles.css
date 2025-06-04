@@ -1,4 +1,4 @@
-.footer_container {
+#footer_container {
   height: 9rem;
   display: flex;
   justify-content: space-between;

@@ -1,5 +1,6 @@
-.catalog_container {
+#catalog_container {
   display: flex;
-  height: calc(100vh);
-  padding: 1rem;
+  flex-direction: column;
+  padding: 2rem 10rem;
+  justify-content: center;
 }

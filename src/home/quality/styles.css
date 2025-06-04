@@ -1,4 +1,4 @@
-.quality_showcase_container {
+#quality_showcase_container {
   display: flex;
   flex-direction: column;
   height: 100%;

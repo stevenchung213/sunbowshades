@@ -5,6 +5,5 @@
   background-color: aliceblue;
   line-height: 2rem;
   height: calc(100vh - 14rem);
-  overflow: auto;
   align-items: center;
 }
