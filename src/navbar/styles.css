@@ -4,12 +4,14 @@
   left: 0;
   height: 5rem;
   width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1rem;
   align-items: center;
   background-color: #ffffff;
   z-index: 10;
+  overflow: hidden;
 }
 
 .navbar_logo_container {
@@ -68,7 +70,8 @@
 }
 
 .navbar_contact_button_container {
-  width: 10%;
+  right: 0;
+  width: 8rem;
   margin-right: 1rem;
 }
 

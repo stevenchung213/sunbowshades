@@ -1,0 +1,8 @@
+#commercial_container {
+  display: flex;
+  flex-direction: column;
+  color: rgb(66, 66, 66);
+  line-height: 2rem;
+  height: calc(100vh - 14rem);
+  overflow: auto;
+}

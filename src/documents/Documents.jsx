@@ -4,18 +4,10 @@ import PrivacyPolicy from './privacy/Privacy';
 import Terms from './terms/Terms';
 import styles from './styles.css';
 
-const Documents = ({ currentDoc }) => {
+const Documents = () => {
   return (
     <div id='documents_container'>
-      {
-        currentDoc === 'Privacy Policy' && <PrivacyPolicy />
-      }
-      {
-        currentDoc === 'Terms of Use' && <Terms />
-      }
-      {
-        (currentDoc === 'Our Team & Vision' || currentDoc === 'About Us') && <About />
-      }
+
     </div>
   );
 };

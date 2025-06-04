@@ -5,26 +5,25 @@ import instagram from './../assets/instagram.png';
 import tiktok from './../assets/tiktok.png';
 import styles from './styles.css';
 
-const Footer = ({ handleLinkClick }) => {
+const Footer = () => {
 
   const footerItems = [
     {
       section: 'Customer Support',
       links: [
-        { text: 'Frequently Asked Questions', link: 'documents/faqs' },
-        { text: 'Commercial Inquiries', link: 'documents/commercial' }
+        { text: 'Frequently Asked Questions', link: 'faqs' },
+        { text: 'Commercial Inquiries', link: 'commercial' }
       ]
     },
     {
       section: 'About Us',
       links: [
-        { text: 'Our Team & Vision', link: 'documents/about' }
+        { text: 'Who We Are', link: '/about' }
       ]
     },
     {
       section: 'Social Media',
       links: [
-        { text: 'Coming Soon', src: null },
         { text: 'Facebook', src: facebook },
         { text: 'Instagram', src: instagram },
         { text: 'Tiktok', src: tiktok }
@@ -33,15 +32,15 @@ const Footer = ({ handleLinkClick }) => {
     {
       section: 'Contact Us',
       links: [
-        { text: 'Email', link: 'email' },
-        { text: 'Phone (323) 577-5705', link: 'phone' }
+        { text: 'Email', link: 'email', value: 'sunbowshades@gmail.com' },
+        { text: 'Phone', link: 'phone', value: '(323) 577-5705' }
       ]
     },
     {
       section: 'Legal Information',
       links: [
-        { text: 'Privacy Policy', link: 'documents/privacy_policy' },
-        { text: 'Terms of Use', link: 'documents/terms_of_use' }
+        { text: 'Privacy Policy', link: 'privacy_policy' },
+        { text: 'Terms of Use', link: 'terms_of_use' }
       ]
     }
   ];
@@ -56,64 +55,47 @@ const Footer = ({ handleLinkClick }) => {
               <ul>
                 { // conditional rendering for Social Media footer items
                   item.section === 'Social Media' ? item.links.map((link, linkIndex) =>
-                    linkIndex === 0 ?
-                      ( // 'Coming Soon' message in italics
-                        <div
-                          key={linkIndex}
-                          className='footer_section_link'
-                          style={{ fontStyle: 'italic', cursor: 'default' }}
+                  (// render social media icons
+                    // TODO
+                    // add links to social media pages (new tab)
+                    <li
+                      key={linkIndex}
+                      className='footer_section_link unclickable social_media_link'
+                    >
+                      {
+                        link.text
+                      }
+                      <img
+                        src={link.src}
+                        alt={link.text}
+                        className='social_media_icon'
+                      />
+                      <div className='social_media_link_tooltip'>
+                        Coming soon..
+                      </div>
+                    </li>
+                  )) // contact us section link handling
+                    : item.section === 'Contact Us' ? item.links.map((link, linkIndex) =>
+                    (
+                      <div
+                        key={linkIndex}
+                        className={`footer_section_link ${link.text.toLowerCase()}_link`}
+                      >
+                        <Link
+                          className={`${link.text.toLowerCase()}_link`}
+                          to='contact'
                         >
                           {
                             link.text
                           }
-                        </div>
-                      )
-                      :
-                      ( // render social media icons
-                        // TODO
-                        // add links to social media pages (new tab)
-                        <li key={linkIndex} className='footer_section_link unclickable'>
+                        </Link>
+                        <div className={`${link.text.toLowerCase()}_link_tooltip`}>
                           {
-                            link.text
+                            link.value
                           }
-                          <img
-                            src={link.src}
-                            alt={link.text}
-                            className='social_media_icon'
-                          />
-                        </li>
-                      )
-                  ) // contact us section link handling
-                    : item.section === 'Contact Us' ? item.links.map((link, linkIndex) =>
-                      // email link
-                      link.text === 'Email' ?
-                        (
-                          <Link
-                            to='contact'
-                            key={linkIndex}
-                            className='footer_section_link email_link'
-                          >
-                            {
-                              link.text
-                            }
-                          </Link>
-                        ) : // phone link
-                        (
-                          <div
-                            key={linkIndex}
-                            className='footer_section_link'
-                          >
-                            <a
-                              href='tel:13235775705'
-                              className='phone_link'
-                            >
-                              {
-                                link.text
-                              }
-                            </a>
-                          </div>
-                        )
-                    )
+                        </div>
+                      </div>
+                    ))
                       : // render all other standard footer items
                       item.links.map((link, linkIndex) =>
                       (
@@ -121,14 +103,12 @@ const Footer = ({ handleLinkClick }) => {
                           to={link.link}
                           key={linkIndex}
                           className='footer_section_link'
-                          onClick={() => handleLinkClick({ view: 'Documents', type: link })}
                         >
                           {
                             link.text
                           }
                         </Link>
-                      )
-                      )
+                      ))
                 }
               </ul>
             </div>

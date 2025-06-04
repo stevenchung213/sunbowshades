@@ -3,26 +3,8 @@ import styles from './styles.css';
 
 const About = () => {
   return (
-    <div>
-      Our team and vision page content goes here.
-      Our team and vision page content goes here.
-      <br />
-      Our team and vision page content goes here.
-      Our team and vision page content goes here.
-      <br />
-      Our team and vision page content goes here.
-      Our team and vision page content goes here.
-      <br />
-      Our team and vision page content goes here.
-      Our team and vision page content goes here.
-      <br />
-      Our team and vision page content goes here.
-      Our team and vision page content goes here.
-      <br />
-      Our team and vision page content goes here.
-      Our team and vision page content goes here.
-      <br />
-      Our team and vision page content goes here.
+    <div className='about_container'>
+      About section here!
     </div>
   );
 };

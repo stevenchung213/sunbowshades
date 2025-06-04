@@ -3,7 +3,7 @@ import styles from './styles.css';
 
 const Terms = () => {
   return (
-    <div id='policy_container'>
+    <div id='terms_of_use_container'>
       <h1>Terms of Use Agreement for SunbowShades</h1>
       <p>
         Welcome to our website at www.sunbowshades.com.

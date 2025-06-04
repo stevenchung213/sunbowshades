@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './Carousel';
+import Carousel from './../../shared/Carousel/Carousel';
 import banded_black_cottage from './../../assets/banded_black_cottage.jpeg';
 import banded_crosse from './../../assets/banded_crosse.jpeg';
 import banded_diego from './../../assets/banded_diego.jpeg';
@@ -31,7 +31,7 @@ const Showcase = () => {
   return (
     <div className='showcase_container'>
       <div className='banner'>
-        The Latest Trend - Banded Shades
+        The Latest Trend, Banded Shades
       </div>
       <Carousel slides={bandedStyles} options={carouselOptions} />
     </div>

@@ -1,17 +1,21 @@
 import React from 'react';
+import styles from './styles.css';
 
 const Contact = () => {
   return (
-    <div>
+    <div id='contact_container'>
       EMAIL CONTACT FORM HERE!
+      <br />
       EMAIL CONTACT FORM HERE!
+      <br />
       EMAIL CONTACT FORM HERE!
+      <br />
       EMAIL CONTACT FORM HERE!
+      <br />
       EMAIL CONTACT FORM HERE!
+      <br />
       EMAIL CONTACT FORM HERE!
-      EMAIL CONTACT FORM HERE!
-      EMAIL CONTACT FORM HERE!
-      EMAIL CONTACT FORM HERE!
+      <br />
       EMAIL CONTACT FORM HERE!
     </div>
   );

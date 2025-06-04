@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './styles.css';
 
 const Commercial = () => {
   return (
-    <div>
+    <div id='commercial_container'>
       COMMERCIAL STUFF HERE!COMMERCIAL STUFF HERE!
       COMMERCIAL STUFF HERE! COMMERCIAL STUFF HERE!
       COMMERCIAL STUFF HERE!

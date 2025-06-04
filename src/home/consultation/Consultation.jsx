@@ -38,7 +38,7 @@ const Consultation = () => {
         />
         <div className='service_areas'>
           <div className='areas_of_service'>
-            We provide services in...
+            We currently service...
           </div>
           <li>Southern California</li>
           <li>
