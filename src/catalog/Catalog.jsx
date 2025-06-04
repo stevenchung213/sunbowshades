@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import FadeOutAlert from '../shared/FadeOutAlert/FadeOutAlert';
-import 'react-tabs/style/react-tabs.css';
 import './styles.css';
 
 const Catalog = () => {
@@ -48,8 +47,6 @@ const Catalog = () => {
     ]
   };
 
-  console.log(Object.keys(catalog));
-
   return (
     <>
       <div className='alert_message_container'>
@@ -65,7 +62,12 @@ const Catalog = () => {
           <TabList>
             { // render all shade styles
               Object.keys(catalog).map((entry, index) => (
-                <Tab key={`tab_${index}`}>{entry}</Tab>
+                <Tab
+                  className='react-tabs__tab main_tab'
+                  key={`tab_${index}`}
+                >
+                  {entry}
+                </Tab>
               ))
             }
           </TabList>
@@ -74,7 +76,10 @@ const Catalog = () => {
               <TabList>
                 { // render Banded style variations
                   catalog.Banded.map((style, index) => (
-                    <Tab>
+                    <Tab
+                      className='react-tabs__tab sub_tab'
+                      key={`banded_tab_${index}`}
+                    >
                       {style.name}
                     </Tab>
                   ))
@@ -82,7 +87,9 @@ const Catalog = () => {
               </TabList>
               { // render Banded style images
                 catalog.Banded.map((style, index) => (
-                  <TabPanel>
+                  <TabPanel
+                    className='react-tabs__tab-panel tab_image'
+                    key={`banded_tab_img_${index}`}>
                     {style.img}
                   </TabPanel>
                 ))
@@ -94,7 +101,10 @@ const Catalog = () => {
               <TabList>
                 { // render Roller style variations
                   catalog.Roller.map((style, index) => (
-                    <Tab>
+                    <Tab
+                      className='react-tabs__tab sub_tab'
+                      key={`roller_tab_${index}`}
+                    >
                       {style.name}
                     </Tab>
                   ))
@@ -102,7 +112,10 @@ const Catalog = () => {
               </TabList>
               { // render Roller style images
                 catalog.Roller.map((style, index) => (
-                  <TabPanel>
+                  <TabPanel
+                    className='react-tabs__tab-panel tab_image'
+                    key={`roller_tab_img_${index}`}
+                  >
                     {style.img}
                   </TabPanel>
                 ))
@@ -114,7 +127,10 @@ const Catalog = () => {
               <TabList>
                 { // render Honeycomb style variations
                   catalog.Honeycomb.map((style, index) => (
-                    <Tab>
+                    <Tab
+                      className='react-tabs__tab sub_tab'
+                      key={`honeycomb_tab_${index}`}
+                    >
                       {style.name}
                     </Tab>
                   ))
@@ -122,7 +138,10 @@ const Catalog = () => {
               </TabList>
               { // render Honeycomb style images
                 catalog.Honeycomb.map((style, index) => (
-                  <TabPanel>
+                  <TabPanel
+                    className='react-tabs__tab-panel tab_image'
+                    key={`honeycomb_tab_img_${index}`}
+                  >
                     {style.img}
                   </TabPanel>
                 ))
@@ -134,7 +153,10 @@ const Catalog = () => {
               <TabList>
                 { // render Graphic style variations
                   catalog.Graphic.map((style, index) => (
-                    <Tab>
+                    <Tab
+                      className='react-tabs__tab sub_tab'
+                      key={`graphic_tab_${index}`}
+                    >
                       {style.name}
                     </Tab>
                   ))
@@ -142,7 +164,10 @@ const Catalog = () => {
               </TabList>
               { // render Graphic style images
                 catalog.Graphic.map((style, index) => (
-                  <TabPanel>
+                  <TabPanel
+                    className='react-tabs__tab-panel tab_image'
+                    key={`graphic_tab_img_${index}`}
+                  >
                     {style.img}
                   </TabPanel>
                 ))
