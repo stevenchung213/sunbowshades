@@ -7,12 +7,12 @@ const Consultation = () => {
 
   return (
     <div id='consultation_container'>
-      <div className='banner'>
+      <div id='consultation_banner' className='banner'>
         Free In-home Consultation
       </div>
       <div className='our_model_container'>
         <div className='what_we_do'>
-          <div className='our_team_will'>
+          <div className='our_experts_provide'>
             Our experts provide...
           </div>
           <ol>

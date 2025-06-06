@@ -3,6 +3,15 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import FadeOutAlert from '../shared/FadeOutAlert/FadeOutAlert';
 import './styles.css';
 import bandedBlackCottage from './../assets/banded_black_cottage.jpeg';
+import bandedCrosse from './../assets/banded_crosse.jpeg';
+import bandedDiego from './../assets/banded_diego.jpeg';
+import bandedManresaWide from './../assets/banded_manresa_wide.jpeg';
+import bandedManresa from './../assets/banded_manresa.jpeg';
+import bandedNias from './../assets/banded_nias.jpeg';
+import bandedOmaha from './../assets/banded_omaha.jpeg';
+import bandedRumoiBlackout from './../assets/banded_rumoi_black_out.jpeg';
+import bandedValletaBlackoutOnetone from './../assets/banded_valleta_black_out_one_tone.jpeg';
+import bandedYola from './../assets/banded_yola.jpeg';
 
 const Catalog = () => {
   const [showAlert1, removeAlert1] = useState(true);
@@ -11,15 +20,15 @@ const Catalog = () => {
   const catalog = {
     Banded: [
       { name: 'Black Cottage', img: bandedBlackCottage },
-      { name: 'Crosse', img: 'imgSrc2' },
-      { name: 'Diego', img: 'imgSrc3' },
-      { name: 'Manresa', img: 'imgSrc4' },
-      { name: 'Manresa Wide', img: 'imgSrc5' },
-      { name: 'Nias', img: 'imgSrc6' },
-      { name: 'Omaha', img: 'imgSrc7' },
-      { name: 'Rumoi Blackout', img: 'imgSrc8' },
-      { name: 'Valleta Blackout', img: 'imgSrc9' },
-      { name: 'Yola', img: 'imgSrc10' },
+      { name: 'Crosse', img: bandedCrosse },
+      { name: 'Diego', img: bandedDiego },
+      { name: 'Manresa', img: bandedManresaWide },
+      { name: 'Manresa Wide', img: bandedManresa },
+      { name: 'Nias', img: bandedNias },
+      { name: 'Omaha', img: bandedOmaha },
+      { name: 'Rumoi Blackout', img: bandedRumoiBlackout },
+      { name: 'Valleta Blackout', img: bandedValletaBlackoutOnetone },
+      { name: 'Yola', img: bandedYola },
     ],
     Roller: [
       { name: 'Roller 1', img: 'imgSrc1' },
@@ -158,6 +167,9 @@ const Catalog = () => {
                         src={style.img}
                         alt={'banded_' + index}
                       />
+                      <div className='info_container'>
+
+                      </div>
                     </div>
                   </TabPanel>
                 ))
@@ -199,6 +211,9 @@ const Catalog = () => {
                         src={style.img}
                         alt={'banded_' + index}
                       />
+                      <div className='info_container'>
+
+                      </div>
                     </div>
                   </TabPanel>
                 ))
@@ -240,6 +255,9 @@ const Catalog = () => {
                         src={style.img}
                         alt={'banded_' + index}
                       />
+                      <div className='info_container'>
+
+                      </div>
                     </div>
                   </TabPanel>
                 ))

@@ -2,25 +2,27 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+  background-color: rgb(233, 233, 233);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .our_model_container {
   display: flex;
-  background-color: rgb(255, 255, 255);
   height: 35rem;
   width: 100%;
 }
 
 .what_we_do {
   height: 100%;
-  width: 50%;
-  padding: 2rem;
+  width: 33%;
+  padding: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
   color: rgb(90, 89, 89);
 }
 
-.our_team_will {
+.our_experts_provide {
   color: rgb(90, 89, 89);
   font-weight: 400;
   text-align: center;
@@ -30,6 +32,8 @@
 }
 
 .our_team_will_photo {
+  max-width: 34%;
+  height: 100%;
   border-radius: 10%;
 }
 
@@ -94,8 +98,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 50%;
-  padding: 2rem;
+  width: 33%;
+  padding: 1rem;
   color: rgb(90, 89, 89);
 }
 
@@ -157,4 +161,5 @@
   padding-top: 1.7rem;
   line-height: 1.200rem;
   text-align: center;
+  color: rgb(99, 99, 99);
 }

@@ -30,10 +30,12 @@ const Showcase = () => {
 
   return (
     <div id='showcase_container'>
-      <div className='banner'>
+      <div id='showcase_banner' className='banner'>
         The Latest Trend, Banded Shades
       </div>
-      <Carousel slides={bandedStyles} options={carouselOptions} />
+      <div className='showcase_carousel_container'>
+        <Carousel slides={bandedStyles} options={carouselOptions} />
+      </div>
     </div>
   );
 };
