@@ -2,6 +2,7 @@ const path = require("path");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const Dotenv = require('dotenv-webpack');
 const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
@@ -14,6 +15,7 @@ module.exports = {
       overlay: true,
     },
   },
+  devtool: devMode && 'eval-cheap-module-source-map',
   entry: ["./src/index.jsx"],
   module: {
     rules: [
@@ -57,6 +59,7 @@ module.exports = {
   },
   plugins: [
     devMode && new ReactRefreshPlugin(),
+    new Dotenv(),
     new HtmlWebpackPlugin({
       filename: "./index.html",
       template: "./public/index.html",

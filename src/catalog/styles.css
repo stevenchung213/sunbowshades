@@ -1,7 +1,7 @@
 #catalog_container {
   display: flex;
   flex-direction: column;
-  padding: 2rem 10rem;
+  padding: 0rem 10rem;
   justify-content: center;
 }
 
@@ -11,7 +11,7 @@
 
 .react-tabs__tab-list {
   border-bottom: 1px solid #aaa;
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
   padding: 0;
 }
 
@@ -61,12 +61,40 @@
   display: block;
 }
 
+.tab_category_style {
+  font-weight: 600 !important;
+  color: rgb(104, 104, 104);
+  font-style: italic;
+}
+
+.tab_category_variation {
+  font-weight: 600 !important;
+  color: rgb(104, 104, 104);
+  font-style: italic;
+}
+
 .main_tab {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .sub_tab {
   font-size: 1.1rem;
   font-weight: 400;
+}
+
+.tab_container {
+  display: flex;
+  height: 40rem;
+  padding: 1rem;
+}
+
+.tab_image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.info_container {
+  width: 100%;
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import FadeOutAlert from '../shared/FadeOutAlert/FadeOutAlert';
 import './styles.css';
+import bandedBlackCottage from './../assets/banded_black_cottage.jpeg';
 
 const Catalog = () => {
   const [showAlert1, removeAlert1] = useState(true);
@@ -9,7 +10,7 @@ const Catalog = () => {
 
   const catalog = {
     Banded: [
-      { name: 'Black Cottage', img: 'imgSrc1' },
+      { name: 'Black Cottage', img: bandedBlackCottage },
       { name: 'Crosse', img: 'imgSrc2' },
       { name: 'Diego', img: 'imgSrc3' },
       { name: 'Manresa', img: 'imgSrc4' },
@@ -38,7 +39,7 @@ const Catalog = () => {
       { name: 'Honeycomb 7', img: 'imgSrc7' },
       { name: 'Honeycomb 8', img: 'imgSrc8' },
     ],
-    Graphic: [
+    'Graphic Print': [
       { name: 'Graphic 1', img: 'imgSrc1' },
       { name: 'Graphic 2', img: 'imgSrc2' },
       { name: 'Graphic 3', img: 'imgSrc3' },
@@ -58,8 +59,14 @@ const Catalog = () => {
         />
       </div>
       <div id='catalog_container'>
-        <Tabs>
+        <Tabs defaultIndex={1}>
           <TabList>
+            <Tab
+              className='react-tabs__tab main_tab tab_category_style'
+              disabled
+            >
+              Type of Shades:
+            </Tab>
             { // render all shade styles
               Object.keys(catalog).map((entry, index) => (
                 <Tab
@@ -72,8 +79,16 @@ const Catalog = () => {
             }
           </TabList>
           <TabPanel>
-            <Tabs>
+          </TabPanel>
+          <TabPanel>
+            <Tabs defaultIndex={1}>
               <TabList>
+                <Tab
+                  className='react-tabs__tab sub_tab tab_category_variation'
+                  disabled
+                >
+                  Variation:
+                </Tab>
                 { // render Banded style variations
                   catalog.Banded.map((style, index) => (
                     <Tab
@@ -85,20 +100,38 @@ const Catalog = () => {
                   ))
                 }
               </TabList>
+              <TabPanel>
+              </TabPanel>
               { // render Banded style images
                 catalog.Banded.map((style, index) => (
                   <TabPanel
-                    className='react-tabs__tab-panel tab_image'
-                    key={`banded_tab_img_${index}`}>
-                    {style.img}
+                    className='react-tabs__tab-panel'
+                    key={`banded_tab_img_${index}`}
+                  >
+                    <div className='tab_container'>
+                      <img
+                        className='tab_image'
+                        src={style.img}
+                        alt={'banded_' + index}
+                      />
+                      <div className='info_container'>
+
+                      </div>
+                    </div>
                   </TabPanel>
                 ))
               }
             </Tabs>
           </TabPanel>
           <TabPanel>
-            <Tabs>
+            <Tabs defaultIndex={1}>
               <TabList>
+                <Tab
+                  className='react-tabs__tab sub_tab tab_category_variation'
+                  disabled
+                >
+                  Variation:
+                </Tab>
                 { // render Roller style variations
                   catalog.Roller.map((style, index) => (
                     <Tab
@@ -110,21 +143,36 @@ const Catalog = () => {
                   ))
                 }
               </TabList>
+              <TabPanel>
+              </TabPanel>
               { // render Roller style images
                 catalog.Roller.map((style, index) => (
                   <TabPanel
-                    className='react-tabs__tab-panel tab_image'
+                    className='react-tabs__tab-panel'
                     key={`roller_tab_img_${index}`}
                   >
-                    {style.img}
+
+                    <div className='tab_container'>
+                      <img
+                        className='tab_image'
+                        src={style.img}
+                        alt={'banded_' + index}
+                      />
+                    </div>
                   </TabPanel>
                 ))
               }
             </Tabs>
           </TabPanel>
           <TabPanel>
-            <Tabs>
+            <Tabs defaultIndex={1}>
               <TabList>
+                <Tab
+                  className='react-tabs__tab sub_tab tab_category_variation'
+                  disabled
+                >
+                  Variation:
+                </Tab>
                 { // render Honeycomb style variations
                   catalog.Honeycomb.map((style, index) => (
                     <Tab
@@ -136,23 +184,38 @@ const Catalog = () => {
                   ))
                 }
               </TabList>
+              <TabPanel>
+              </TabPanel>
               { // render Honeycomb style images
                 catalog.Honeycomb.map((style, index) => (
                   <TabPanel
-                    className='react-tabs__tab-panel tab_image'
+                    className='react-tabs__tab-panel'
                     key={`honeycomb_tab_img_${index}`}
                   >
-                    {style.img}
+
+                    <div className='tab_container'>
+                      <img
+                        className='tab_image'
+                        src={style.img}
+                        alt={'banded_' + index}
+                      />
+                    </div>
                   </TabPanel>
                 ))
               }
             </Tabs>
           </TabPanel>
           <TabPanel>
-            <Tabs>
+            <Tabs defaultIndex={1}>
               <TabList>
+                <Tab
+                  className='react-tabs__tab sub_tab tab_category_variation'
+                  disabled
+                >
+                  Variation:
+                </Tab>
                 { // render Graphic style variations
-                  catalog.Graphic.map((style, index) => (
+                  catalog['Graphic Print'].map((style, index) => (
                     <Tab
                       className='react-tabs__tab sub_tab'
                       key={`graphic_tab_${index}`}
@@ -162,13 +225,22 @@ const Catalog = () => {
                   ))
                 }
               </TabList>
+              <TabPanel>
+              </TabPanel>
               { // render Graphic style images
-                catalog.Graphic.map((style, index) => (
+                catalog['Graphic Print'].map((style, index) => (
                   <TabPanel
-                    className='react-tabs__tab-panel tab_image'
+                    className='react-tabs__tab-panel'
                     key={`graphic_tab_img_${index}`}
                   >
-                    {style.img}
+
+                    <div className='tab_container'>
+                      <img
+                        className='tab_image'
+                        src={style.img}
+                        alt={'banded_' + index}
+                      />
+                    </div>
                   </TabPanel>
                 ))
               }

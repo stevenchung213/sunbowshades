@@ -27,10 +27,13 @@
     "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "dotenv": "^16.5.0",
+    "dotenv-webpack": "^8.1.0",
     "embla-carousel-react": "^8.6.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-phone-number-input": "^3.4.12",
     "react-router": "^7.6.1",
     "react-tabs": "^6.1.0"
   }
