@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import FadeOutAlert from '../shared/FadeOutAlert/FadeOutAlert';
 import './styles.css';
@@ -48,6 +48,13 @@ const Catalog = () => {
       { name: 'Honeycomb 7', img: 'imgSrc7' },
       { name: 'Honeycomb 8', img: 'imgSrc8' },
     ],
+    'Laser Print': [
+      { name: 'Laser Print 1', img: 'imgSrc1' },
+      { name: 'Laser Print 2', img: 'imgSrc2' },
+      { name: 'Laser Print 3', img: 'imgSrc3' },
+      { name: 'Laser Print 4', img: 'imgSrc4' },
+      { name: 'Laser Print 5', img: 'imgSrc5' },
+    ],
     'Graphic Print': [
       { name: 'Graphic 1', img: 'imgSrc1' },
       { name: 'Graphic 2', img: 'imgSrc2' },
@@ -57,32 +64,41 @@ const Catalog = () => {
     ]
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <>
       <div className='alert_message_container'>
         <FadeOutAlert
+          className='alert_message'
           textValue='Please keep in mind that our online catalog does not include all our available styles and colors!'
         />
         <FadeOutAlert
+          className='alert_message'
           textValue='Access to our complete catalog along with fabric samples will be provided during your free in-home consultation.'
         />
       </div>
       <div id='catalog_container'>
-        <Tabs defaultIndex={1}>
+        <Tabs
+          className='main_tabs_container'
+          defaultIndex={1}
+        >
           <TabList>
             <Tab
               className='react-tabs__tab main_tab tab_category_style'
               disabled
             >
-              Type of Shades:
+              Type:
             </Tab>
             { // render all shade styles
-              Object.keys(catalog).map((entry, index) => (
+              Object.keys(catalog).map((style, index) => (
                 <Tab
                   className='react-tabs__tab main_tab'
                   key={`tab_${index}`}
                 >
-                  {entry}
+                  {style}
                 </Tab>
               ))
             }
@@ -203,6 +219,50 @@ const Catalog = () => {
                   <TabPanel
                     className='react-tabs__tab-panel'
                     key={`honeycomb_tab_img_${index}`}
+                  >
+
+                    <div className='tab_container'>
+                      <img
+                        className='tab_image'
+                        src={style.img}
+                        alt={'banded_' + index}
+                      />
+                      <div className='info_container'>
+
+                      </div>
+                    </div>
+                  </TabPanel>
+                ))
+              }
+            </Tabs>
+          </TabPanel>
+          <TabPanel>
+            <Tabs defaultIndex={1}>
+              <TabList>
+                <Tab
+                  className='react-tabs__tab sub_tab tab_category_variation'
+                  disabled
+                >
+                  Variation:
+                </Tab>
+                { // render Laser style variations
+                  catalog['Laser Print'].map((style, index) => (
+                    <Tab
+                      className='react-tabs__tab sub_tab'
+                      key={`laser_tab_${index}`}
+                    >
+                      {style.name}
+                    </Tab>
+                  ))
+                }
+              </TabList>
+              <TabPanel>
+              </TabPanel>
+              { // render Laser style images
+                catalog['Laser Print'].map((style, index) => (
+                  <TabPanel
+                    className='react-tabs__tab-panel'
+                    key={`laser_tab_img_${index}`}
                   >
 
                     <div className='tab_container'>

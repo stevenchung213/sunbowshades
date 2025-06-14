@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import Carousel from './../../shared/Carousel/Carousel';
 import banded_black_cottage from './../../assets/banded_black_cottage.jpeg';
 import banded_crosse from './../../assets/banded_crosse.jpeg';
@@ -12,7 +12,7 @@ import banded_valleta_blackout_onetone from './../../assets/banded_valleta_black
 import banded_yola from './../../assets/banded_yola.jpeg';
 import './styles.css';
 
-const Showcase = () => {
+const Showcase = ({ isMobile }) => {
 
   const carouselOptions = { align: 'start', loop: true };
   const bandedStyles = [

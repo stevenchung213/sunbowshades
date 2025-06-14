@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { isValidElement } from 'react';
 import { useRef, useEffect, useState } from "react";
 import PhoneInput from 'react-phone-number-input/input'
+import { isPossiblePhoneNumber, isValidPhoneNumber } from 'react-phone-number-input';
 import emailjs from "@emailjs/browser";
 import './styles.css';
 
@@ -29,6 +30,8 @@ const Contact = () => {
     console.log(phoneRef.current.value)
     console.log(contactPreferenceRef.current.value)
     console.log(referralCodeRef.current.value)
+    if (phoneRef.current.value[0] !== '(') return alert('please input a valid phone number');
+
     return;
     const serviceId = process.env.EMAILJS_SERVICE_ID;
     const templateId = process.env.EMAILJS_TEMPLATE_KEY;
@@ -81,8 +84,8 @@ const Contact = () => {
               placeholder='enter your phone number'
               value={value}
               onChange={setValue}
+              error={value ? (isValidPhoneNumber(value) ? undefined : 'invalid phone #') : 'phone # required'}
             />
-            {/* <input className='form_text_input' ref={phoneRef} type="tel" placeholder="(123)123-4567" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /> */}
           </div>
           <div className="form_group">
             <label className='form_label'>Preferred means of contact:</label>
@@ -91,13 +94,13 @@ const Contact = () => {
               <option className='select_option' value="email">Email</option>
             </select>
           </div>
-          <button className="submit_button" disabled={loading}>
-            Submit
-          </button>
           <div className="form_group">
             <label className='form_label'>[Optional] Referral #:</label>
             <input className='form_text_input' ref={referralCodeRef} type="referral_code" placeholder="enter your code" />
           </div>
+          <button className="submit_button" disabled={loading}>
+            Submit
+          </button>
         </form>
       </section>
     </div>

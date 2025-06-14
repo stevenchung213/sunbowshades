@@ -1,4 +1,4 @@
-#policy_container {
+.document_container {
   display: flex;
   flex-direction: column;
   color: rgb(66, 66, 66);
@@ -6,9 +6,10 @@
   line-height: 2rem;
   height: calc(100vh - 14rem);
   overflow: auto;
+  padding: 0 8rem;
 }
 
-#policy_container h1 {
+.document_container h1 {
   font-size: 2.3rem;
   font-weight: 800;
   margin: 5rem;
@@ -17,7 +18,7 @@
 }
 
 
-#policy_container h3 {
+.document_container h3 {
   /* border-top: solid; */
   /* border-bottom: solid; */
   height: 2em;
@@ -28,14 +29,13 @@
   /* text-shadow: 1px 1px 2px grey; */
 }
 
-#policy_container p {
+.document_container p {
   font-family: Arial, sans-serif;
-
   margin: 0em 10em;
   font-size: 1.2rem;
 }
 
-/* #policy_container ul li {
+/* .document_container ul li {
   width: 60%;
   list-style-type: none;
   text-align: left;
@@ -43,12 +43,12 @@
   margin-right: auto;
 } */
 
-#policy_container p i {
+.document_container p i {
   font-size: 1.2rem;
   font-style: italic;
 }
 
-#policy_container p b {
+.document_container p b {
   font-size: 1.2rem;
   font-weight: 600;
 }

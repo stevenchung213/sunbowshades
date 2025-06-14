@@ -40,7 +40,6 @@
   flex-direction: row;
   height: 7rem;
   align-items: center;
-  background-color: transparent;
   text-align: center;
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -48,4 +47,28 @@
   margin: auto;
   text-shadow: rgb(177, 177, 177) 6px 4px 10px;
   color: rgb(90, 89, 89);
+}
+
+@media only screen and (max-width: 768px) {
+  .cover_photo {
+    width: 100%;
+    max-width: 100%;
+    background-image: url('./../assets/stock3_mobile.png');
+    background-size: fit;
+    height: auto;
+  }
+
+  .slogan {
+    width: 100%;
+    margin: auto;
+    font-size: 2.2rem;
+    padding-top: 28rem;
+    padding-bottom: 10rem;
+  }
+
+  .banner {
+    font-size: 2rem;
+    padding: 0 4rem;
+    margin-top: 1rem;
+  }
 }

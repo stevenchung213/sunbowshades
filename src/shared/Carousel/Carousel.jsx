@@ -6,6 +6,7 @@ import {
   NextButton,
   usePrevNextButtons
 } from './CarouselArrowButtons';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './styles.css';
 
 const EmblaCarousel = (props) => {
@@ -29,10 +30,14 @@ const EmblaCarousel = (props) => {
             slides.map((slide, index) => (
               <div className="embla__slide" key={index}>
                 <div className="embla__slide__number">
-                  <img
+                  <LazyLoadImage
                     className='embla__slide__photo'
                     src={slide}
                     alt={'slide-' + index}
+                    effect='blur'
+                    wrapperProps={{
+                      style: { transitionDelay: "1s" },
+                    }}
                   />
                 </div>
               </div>
@@ -40,26 +45,11 @@ const EmblaCarousel = (props) => {
           }
         </div>
       </div>
-
       <div className="embla__controls">
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
-
-        {/* <div className="embla__dots">
-          {
-            scrollSnaps.map((_, index) => (
-              <DotButton
-                key={index}
-                onClick={() => onDotButtonClick(index)}
-                className={'embla__dot'.concat(
-                  index === selectedIndex ? ' embla__dot--selected' : ''
-                )}
-              />
-            ))
-          }
-        </div> */}
       </div>
     </section>
   );

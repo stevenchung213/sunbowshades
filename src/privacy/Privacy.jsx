@@ -3,7 +3,7 @@ import './styles.css';
 
 const PrivacyPolicy = () => {
   return (
-    <div id='policy_container'>
+    <div className='document_container'>
       <h1>Privacy Policy</h1>
       <p>
         We value your privacy and are committed to protecting your personal information.

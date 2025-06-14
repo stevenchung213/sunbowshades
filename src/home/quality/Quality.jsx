@@ -16,19 +16,16 @@ const Quality = () => {
           src={showcase1}
           className='quality_showcase_photo'
           alt='showcase1'
-          loading='lazy'
         />
         <img
           src={showcase2}
           className='quality_showcase_photo'
           alt='showcase2'
-          loading='lazy'
         />
         <img
           src={showcase3}
           className='quality_showcase_photo'
           alt='showcase3'
-          loading='lazy'
         />
       </div>
       <li className='quality_message'>

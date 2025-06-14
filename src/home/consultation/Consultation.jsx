@@ -34,7 +34,6 @@ const Consultation = () => {
           src={showcase7}
           className='our_team_will_photo'
           alt='stock5'
-          loading='lazy'
         />
         <div className='service_areas'>
           <div className='areas_of_service'>

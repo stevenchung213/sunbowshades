@@ -1,11 +1,12 @@
 import React, { lazy, Suspense } from 'react';
+import Loading from './../shared/Loading/Loading';
 import './styles.css';
 
 const Quality = lazy(() => import('./quality/Quality'));
 const Consultation = lazy(() => import('./consultation/Consultation'));
 const Showcase = lazy(() => import('./showcase/Showcase'));
 
-const Home = () => {
+const Home = ({ isMobile }) => {
   return (
     <main id='home_container'>
       <div className='cover_photo' alt='cover_photo'>
@@ -13,9 +14,15 @@ const Home = () => {
           Where Quality and Comfort Meets Style in Every Window
         </div>
       </div>
-      <Showcase />
-      <Quality />
-      <Consultation />
+      <Suspense fallback={<Loading />}>
+        <Showcase isMobile={isMobile} />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <Quality isMobile={isMobile} />
+      </Suspense>
+      <Suspense fallback={<Loading />}>
+        <Consultation isMobile={isMobile} />
+      </Suspense>
     </main>
   );
 };

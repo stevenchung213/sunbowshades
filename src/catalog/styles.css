@@ -5,6 +5,25 @@
   justify-content: center;
   background-color: rgb(241, 241, 241);
   padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.alert_message_container {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.alert_message {
+  margin-top: 4px;
+  border-radius: 6px;
+}
+
+.main_tabs_container {
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border-radius: 8px;
+  padding: 0 1rem;
 }
 
 .react-tabs {
@@ -13,8 +32,7 @@
 
 .react-tabs__tab-list {
   border-bottom: 1px solid #aaa;
-  margin: 0 0 0.5rem;
-  padding: 0;
+  padding: 4px;
 }
 
 .react-tabs__tab {

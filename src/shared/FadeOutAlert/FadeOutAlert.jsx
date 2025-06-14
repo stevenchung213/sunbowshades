@@ -9,7 +9,7 @@ const useFade = () => {
     if (!show) setVisible(false);
   };
 
-  const style = { animation: `${show ? "fadeIn" : "fadeOut"} .3s` };
+  const style = { animation: `${show ? "fadeIn" : "fadeOut"} 0.7s` };
 
   const fadeProps = {
     style,

@@ -175,6 +175,10 @@
   color: rgb(167, 167, 167);
 }
 
+.embla__button:hover {
+  color: rgb(95, 95, 95)
+}
+
 .embla__button__svg {
   width: 55%;
   height: 55%;

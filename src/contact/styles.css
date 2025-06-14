@@ -12,6 +12,7 @@
   margin: auto;
   background: white;
   padding: 2rem 3rem;
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
 }
 
 .form {
@@ -52,17 +53,21 @@
 
 .form_text_input:focus {
   border-color: #979797;
-  /* background: #fff; */
 }
 
 .form_select_input {
   border: none;
   border-radius: 6px;
-  background: #dee1e2;
   height: 2rem;
   padding: 0 6px;
   flex-grow: 1;
   text-align: center;
+  background-color: rgb(212, 212, 212);
+  color: rgb(85, 85, 85);
+}
+
+.select_option {
+  background-color: rgb(212, 212, 212);
 }
 
 .submit_button {
