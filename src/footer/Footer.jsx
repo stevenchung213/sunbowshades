@@ -5,14 +5,14 @@ import instagram from './../assets/instagram.png';
 import tiktok from './../assets/tiktok.png';
 import './styles.css';
 
-const Footer = () => {
+const Footer = ({ isMobile }) => {
 
   const footerItems = [
     {
       section: 'Customer Support',
       links: [
-        { text: 'Frequently Asked Questions', link: 'faqs' },
-        { text: 'Commercial Inquiries', link: 'commercial' }
+        { text: isMobile ? 'FAQs' : 'Frequently Asked Questions', link: 'faqs' },
+        { text: isMobile ? 'Commercial' : 'Commercial Inquiries', link: 'commercial' }
       ]
     },
     {

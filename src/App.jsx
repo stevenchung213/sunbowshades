@@ -34,7 +34,7 @@ const App = () => {
         <Route path='contact' element={<Contact isMobile={isMobile} />} />
         <Route path='*' element={<NotFound isMobile={isMobile} />} />
       </Routes>
-      <Footer />
+      <Footer isMobile={isMobile} />
     </div>
   );
 };
