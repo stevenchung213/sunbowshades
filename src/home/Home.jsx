@@ -17,6 +17,16 @@ const Home = ({ isMobile }) => {
       <Suspense fallback={<Loading />}>
         <Showcase isMobile={isMobile} />
       </Suspense>
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
       <Suspense fallback={<Loading />}>
         <Quality isMobile={isMobile} />
       </Suspense>
