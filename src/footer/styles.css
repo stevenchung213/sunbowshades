@@ -141,22 +141,31 @@
 
 @media only screen and (max-width: 768px) {
   #footer_container {
-    height: 9rem;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: auto;
-    grid-column-gap: 2rem;
-    grid-row-gap: 1rem;
-    padding: 1.5rem 0;
+    grid-column-gap: 3.3rem;
+    grid-row-gap: 0.3rem;
+    padding: 0.5rem 0;
   }
 
   .footer_section_container h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     color: rgb(94, 94, 94);
+    margin: 0.2rem 0;
   }
 
   .footer_section_container:last-child {
     grid-column: 3;
+  }
+
+  .footer_section_link {
+    font-size: 0.95rem;
+    height: 1rem;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+    color: rgb(94, 94, 94);
+    text-decoration: none;
   }
 }
