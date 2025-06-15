@@ -81,4 +81,20 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  .question_container {
+    height: 3.9rem;
+  }
+
+  .question {
+    font-size: 1.15rem;
+    line-height: 1.3rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  .down_arrow {
+    padding-top: 10px;
+    height: 1.7rem;
+  }
 }
