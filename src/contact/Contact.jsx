@@ -15,6 +15,7 @@ const Contact = () => {
 
   const emailRef = useRef();
   const nameRef = useRef();
+  const typeRef = useRef();
   const phoneRef = useRef();
   const locationRef = useRef();
   const contactPreferenceRef = useRef();
@@ -71,6 +72,13 @@ const Contact = () => {
           <div className="form_group">
             <label className='form_label'>Email:</label>
             <input className='form_text_input' ref={emailRef} type="email" placeholder="enter your email" required />
+          </div>
+          <div className="form_group">
+            <label className='form_label'>Type:</label>
+            <select className='form_select_input' ref={typeRef} required >
+              <option className='select_option' value="residential">Residential</option>
+              <option className='select_option' value="commercial">Commercial</option>
+            </select>
           </div>
           <div className="form_group">
             <label className='form_label'>Location:</label>
