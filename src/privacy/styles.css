@@ -70,16 +70,16 @@
   .document_paragraph {
     font-family: Arial, sans-serif;
     margin: 0 2.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .document_italics {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: italic;
   }
 
   .document_bold {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 }

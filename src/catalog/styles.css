@@ -1,11 +1,12 @@
 #catalog_container {
   display: flex;
   flex-direction: column;
-  padding: 0rem 10rem;
+  height: 100%;
+  padding: 1rem 10rem;
   justify-content: center;
   background-color: rgb(241, 241, 241);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  width: 1;
+  min-height: 100%;
 }
 
 .alert_message_container {
@@ -15,7 +16,17 @@
 }
 
 .alert_message {
-  margin-top: 4px;
+  color: rgb(90, 89, 89);
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgb(255, 153, 153);
+  height: 3rem;
+  margin: 0 14rem 0.2rem 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: center;
   border-radius: 6px;
 }
 
@@ -23,7 +34,7 @@
   box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
   background-color: white;
   border-radius: 8px;
-  padding: 0 1rem;
+  padding: 1rem 2rem;
 }
 
 .react-tabs {
@@ -121,4 +132,77 @@
   height: 100%;
   width: 50%;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #catalog_container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100dvh - 6rem);
+    padding: 0 0.5rem;
+    justify-content: center;
+    background-color: rgb(241, 241, 241);
+    width: 1;
+    min-height: 100%;
+  }
+
+  .alert_message_container {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    padding-top: 4px;
+  }
+
+  .alert_message {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2px auto;
+    border-radius: 6px;
+    line-height: 1rem;
+    padding: 2rem 1rem;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+
+  .main_tabs_container {
+    box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem 0.1rem;
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .react-tabs__tab {
+    padding: 2px 6px;
+  }
+
+  .main_tab {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .sub_tab {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .tab_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+  }
+
+  .tab_image {
+    width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+
+  .info_container {
+    width: 100%;
+    min-width: 100%;
+    padding: 1rem;
+  }
 }

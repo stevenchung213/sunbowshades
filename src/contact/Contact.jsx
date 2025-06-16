@@ -19,20 +19,25 @@ const Contact = () => {
   const locationRef = useRef();
   const contactPreferenceRef = useRef();
   const referralCodeRef = useRef();
+  const messageBoxRef = useRef();
   const [value, setValue] = useState('');
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (phoneRef.current.value[0] !== '(') return alert('please input a valid phone number');
+
     console.log(nameRef.current.value)
     console.log(emailRef.current.value)
     console.log(locationRef.current.value)
     console.log(phoneRef.current.value)
     console.log(contactPreferenceRef.current.value)
     console.log(referralCodeRef.current.value)
-    if (phoneRef.current.value[0] !== '(') return alert('please input a valid phone number');
+    console.log(messageBoxRef.current.value)
 
     return;
+
     const serviceId = process.env.EMAILJS_SERVICE_ID;
     const templateId = process.env.EMAILJS_TEMPLATE_KEY;
 
@@ -44,7 +49,8 @@ const Contact = () => {
         phone: phoneRef.current.value,
         location: locationRef.current.value,
         contactPreference: contactPreferenceRef.current.value,
-        referralCode: referralCodeRef.current.value
+        referralCode: referralCodeRef.current.value,
+        message: messageBoxRef.current.value,
       });
     } catch (error) {
       console.log(error);
@@ -88,15 +94,19 @@ const Contact = () => {
             />
           </div>
           <div className="form_group">
-            <label className='form_label'>Preferred means of contact:</label>
+            <label className='form_label'>Contact preference:</label>
             <select className='form_select_input' ref={contactPreferenceRef} required >
               <option className='select_option' value="phone">Phone</option>
               <option className='select_option' value="email">Email</option>
             </select>
           </div>
           <div className="form_group">
-            <label className='form_label'>[Optional] Referral #:</label>
-            <input className='form_text_input' ref={referralCodeRef} type="referral_code" placeholder="enter your code" />
+            <label className='form_label'>Referral #:</label>
+            <input className='form_text_input' ref={referralCodeRef} type="referral_code" placeholder="enter code [optional]" />
+          </div>
+          <div className="form_group">
+            <label className='form_label'>Message:</label>
+            <textarea className='form_text_input message_box' ref={messageBoxRef} type="message" placeholder="enter message [optional]" />
           </div>
           <button className="submit_button" disabled={loading}>
             Submit
