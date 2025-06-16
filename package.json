@@ -30,6 +30,7 @@
     "@emailjs/browser": "^4.4.1",
     "dotenv": "^16.5.0",
     "dotenv-webpack": "^8.1.0",
+    "embla-carousel-class-names": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

@@ -9,11 +9,8 @@ import {
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './styles.css';
 
-const EmblaCarousel = (props) => {
-  const { slides, options } = props;
+const EmblaCarousel = ({ slides, options, identifier }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
-
-  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
   const {
     prevBtnDisabled,
@@ -23,15 +20,15 @@ const EmblaCarousel = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <section className={"embla"}>
+      <div className={identifier ? identifier + "_embla__viewport" : "embla__viewport"} ref={emblaRef}>
+        <div className={identifier ? identifier + "_embla__container" : "embla__container"}>
           {
             slides.map((slide, index) => (
-              <div className="embla__slide" key={index}>
-                <div className="embla__slide__number">
+              <div className={identifier ? identifier + "_embla__slide" : "embla__slide"} key={index}>
+                <div className={identifier ? identifier + "_embla__slide__number" : "embla__slide__number"}>
                   <LazyLoadImage
-                    className='embla__slide__photo'
+                    className={identifier ? identifier + '_embla__slide__photo' : 'embla__slide__photo'}
                     src={slide}
                     alt={'slide-' + index}
                     effect='blur'
@@ -45,8 +42,8 @@ const EmblaCarousel = (props) => {
           }
         </div>
       </div>
-      <div className="embla__controls">
-        <div className="embla__buttons">
+      <div className={identifier ? identifier + "_embla__controls" : "embla__controls"}>
+        <div className={identifier ? identifier + "_embla__buttons" : "embla__buttons"}>
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>

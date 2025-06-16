@@ -5,6 +5,7 @@ import './styles.css';
 const Quality = lazy(() => import('./quality/Quality'));
 const Consultation = lazy(() => import('./consultation/Consultation'));
 const Showcase = lazy(() => import('./showcase/Showcase'));
+const CommercialShowcase = lazy(() => import('./showcase/CommercialShowcase'));
 
 const Home = ({ isMobile }) => {
   return (
@@ -17,16 +18,9 @@ const Home = ({ isMobile }) => {
       <Suspense fallback={<Loading />}>
         <Showcase isMobile={isMobile} />
       </Suspense>
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
-      RESIDENTIAL / COMMERCIAL SECTION NEEDED!
+      <Suspense fallback={<Loading />}>
+        <CommercialShowcase isMobile={isMobile} />
+      </Suspense>
       <Suspense fallback={<Loading />}>
         <Quality isMobile={isMobile} />
       </Suspense>

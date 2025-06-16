@@ -19,7 +19,11 @@ const Navbar = ({ isMobile }) => {
       {
         !showNav &&
         <div className='navbar_logo_container'>
-          <img className='logo' src={logo} alt='Logo' />
+          <NavLink
+            to='/'
+          >
+            <img className='logo' src={logo} alt='Logo' onClick={() => { }} />
+          </NavLink>
         </div>
       }
       {
