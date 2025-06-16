@@ -5,4 +5,5 @@
   height: calc(100vh - 14rem);
   align-items: center;
   padding-top: 2rem;
+  overflow-y: scroll;
 }

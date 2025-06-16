@@ -35,7 +35,7 @@ const Contact = () => {
     console.log(contactPreferenceRef.current.value)
     console.log(referralCodeRef.current.value)
     console.log(messageBoxRef.current.value)
-
+    console.log('do not forget to remove the return statement')
     return;
 
     const serviceId = process.env.EMAILJS_SERVICE_ID;
