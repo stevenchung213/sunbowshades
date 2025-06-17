@@ -12,7 +12,7 @@ const CommercialShowcase = ({ isMobile }) => {
   const corporate = [corp4, corp2, corp3, corp1];
 
   return (
-    <div className='showcase_container'>
+    <div id='commercial_showcase_container'>
       <div id='showcase_banner' className='banner'>
         Commercial Solutions
       </div>

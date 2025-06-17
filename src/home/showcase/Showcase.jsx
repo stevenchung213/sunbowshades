@@ -29,7 +29,7 @@ const Showcase = ({ isMobile }) => {
   ];
 
   return (
-    <div className='showcase_container'>
+    <div id='showcase_container'>
       <div id='showcase_banner' className='banner'>
         The Latest Trend, Banded Shades
       </div>
