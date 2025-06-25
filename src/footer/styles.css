@@ -148,10 +148,16 @@
     grid-row-gap: 0.3rem;
     padding: 1rem 1rem;
     height: 100%;
+    margin-bottom: 3rem;
   }
 
   .footer_section_container {
     text-align: center;
+  }
+
+  .social_media_link {
+    text-align: center;
+    justify-content: center;
   }
 
   .footer_section_container h3 {
@@ -180,5 +186,11 @@
     text-decoration: none;
   }
 
+  .phone_link {
+    font-size: 0.95rem;
+  }
 
+  .email_link {
+    font-size: 0.95rem;
+  }
 }

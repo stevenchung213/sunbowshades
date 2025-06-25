@@ -1,50 +1,48 @@
 #about_container {
   display: flex;
+  flex-direction: column;
   color: rgb(66, 66, 66);
-  height: calc(100vh - 14rem);
   align-items: center;
-  background-color: antiquewhite;
+  justify-content: center;
+  background: linear-gradient(180deg, rgb(230, 201, 164) 0%, rgb(255, 234, 206) 30%, rgb(255, 255, 255) 50%, rgb(255, 234, 206) 70%, rgb(230, 201, 164) 100%);
+  padding-bottom: 4rem;
 }
 
 .about_info_container {
   line-height: 1.5rem;
-  padding: 5rem 3rem;
+  padding: 2rem 10rem;
+  margin: auto;
+  width: 80%;
 }
 
 .about_info_container p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
+  padding-left: 1rem;
 }
 
 .about_image {
   border-radius: 40px;
-  margin-right: 3rem;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
   #about_container {
     flex-direction: column;
     height: auto;
-    background-image: url('./../assets/mobile_black_cottage.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100%);
   }
 
   .about_info_container {
     line-height: 1.4rem;
     margin: 1rem 0.5rem;
-    padding: 2rem;
+    padding: 0.5rem;
   }
 
   .about_info_container p {
-    background-color: antiquewhite;
     font-size: 1.1rem;
-    font-style: italic;
+    font-style: normal;
     font-weight: 600;
     color: rgb(59, 59, 59);
-    border-radius: 10px;
-    opacity: 75%;
     padding: 1rem;
   }
 }

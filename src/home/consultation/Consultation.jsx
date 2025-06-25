@@ -23,11 +23,10 @@ const Consultation = () => {
               Precise measurements down to the millimeter (1/25") versus competitors (1/16")
             </li>
             <li>
-              Installation once your product arrives*
+              Quick and clean installation
             </li>
           </ol>
           <div className='fine_print'>
-            *Due to shipping durations, installation usually occurs two weeks out.
           </div>
         </div>
         <img

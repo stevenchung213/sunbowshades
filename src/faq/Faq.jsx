@@ -41,7 +41,7 @@ const Faqs = () => {
 
   return (
     <div id='faqs_container'>
-      <div className='banner faqs_banner'>
+      <div id={'faqs_banner'} className='banner faqs_banner'>
         Frequently Asked Questions
       </div>
       <div className='sub_banner'>
@@ -55,7 +55,16 @@ const Faqs = () => {
               key={index}
             >
               <div className='question_container'>
-                <div className='question'>
+                <div
+                  className='question'
+                  onClick={() => {
+                    let currState = showAnswers[index];
+                    toggleAnswers({
+                      ...showAnswers,
+                      [index]: !currState
+                    })
+                  }}
+                >
                   {question.text}
                 </div>
                 <img

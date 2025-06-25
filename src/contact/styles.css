@@ -2,18 +2,37 @@
   display: flex;
   flex-direction: column;
   color: rgb(66, 66, 66);
-  background-color: aliceblue;
+  background: linear-gradient(180deg, rgb(230, 201, 164) 0%, rgb(255, 234, 206) 30%, rgb(255, 255, 255) 50%, rgb(255, 234, 206) 70%, rgb(230, 201, 164) 100%);
   line-height: 2rem;
-  height: calc(100vh - 14rem);
   align-items: center;
+  padding: 0 5rem;
+}
+
+#contact_banner {
+  color: rgb(71, 65, 56);
+}
+
+.contact_section {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.contact_image {
+  margin: auto;
+  width: 50%;
+  border-radius: 80px;
+  object-fit: contain;
 }
 
 .form_container {
   margin: auto;
+  margin-top: 2rem;
   background: white;
   padding: 2rem 3rem;
   box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  border-radius: 30px;
 }
 
 .form {
@@ -82,12 +101,19 @@
   height: 2.2rem;
   margin-top: 4rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 20px;
   background-color: rgb(187, 187, 187);
 }
 
 .submit_button:hover {
   background-color: rgb(128, 128, 128);
+}
+
+#contact_message {
+  color: rgb(71, 65, 56);
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -96,10 +122,30 @@
     padding: 0.5rem 0;
   }
 
+  #contact_banner {
+    color: rgb(71, 65, 56);
+  }
+
+  .contact_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact_image {
+    margin: auto;
+    width: 70%;
+    border-radius: 80px;
+    object-fit: contain;
+  }
+
   .form_container {
     padding: 1rem 3rem;
     box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+    border-radius: 20px;
   }
 
   .form {
@@ -107,5 +153,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  #contact_message {
+    color: rgb(71, 65, 56);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 3rem;
   }
 }

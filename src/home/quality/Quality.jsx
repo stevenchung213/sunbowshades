@@ -1,36 +1,76 @@
 import React from 'react';
 import './styles.css';
-import showcase1 from './../../assets/showcase1.jpeg'
-import showcase2 from './../../assets/showcase2.jpeg'
-import showcase3 from './../../assets/showcase3.jpeg'
+import showcase1 from './../../assets/showcase1.jpeg';
+import showcase2 from './../../assets/showcase2.jpeg';
+import showcase3 from './../../assets/showcase3.jpeg';
+import labIcon from './../../assets/lab_icon_2.png';
+import antibacterialIcon from './../../assets/antibacterial_icon_2.png';
+import dustIcon from './../../assets/dust_icon_2.png';
+import uvIcon from './../../assets/uv_icon.png';
 
 const Quality = () => {
 
+  const message1 = [
+    'All our products are manufactured in South Korea including the fabric. Not only are they known for their textiles, they also lead in health standards throughout the world. This results in quality that is affordable without sacrificing on health.',
+    <br key={1} />
+  ];
+  const message2 = [
+    'Our window treatments are designed with advanced materials that effectively block harmful UV rays, protecting your family\'s health and home from fading and discoloration. This ensures your interior remains vibrant and preserved over time.',
+    <br key={3} />,
+  ];
+
+  const message3 = [
+    'Each of our treatments is tested to filter out dust particles efficiently, contributing to a cleaner and healthier living environment. This feature is particularly beneficial for those with allergies or who prioritize air quality in their homes.',
+    < br key={4} />,
+  ];
+
+  const message4 = [
+    'We employ antibacterial fabrics that inhibit the growth of bacteria and microbes, making our products safer for use. This ensures your window treatments not only look good but also contribute to a hygienic living space.'
+  ];
+
+  const message5 = [
+    'Visit our catalog to explore our products and discover how they can transform your home while offering the highest standards in protection and hygiene. Trust SunbowShades for your window treatment needs—because we trust only the best.'
+  ];
+
   return (
     <div id='quality_showcase_container'>
-      <div className='banner'>
-        Affordable Quality, Built to Last
+      <div id='quality_showcase_banner' className='banner'>
+        WHY CHOOSE US?
       </div>
-      <div className='quality_showcase'>
-        <img
-          src={showcase1}
-          className='quality_showcase_photo'
-          alt='showcase1'
-        />
-        <img
-          src={showcase2}
-          className='quality_showcase_photo'
-          alt='showcase2'
-        />
-        <img
-          src={showcase3}
-          className='quality_showcase_photo'
-          alt='showcase3'
-        />
-      </div>
-      <li className='quality_message'>
+      {/* <div className='quality_showcase_subheader'>
         All our products are manufactured in South Korea including the fabric!
-      </li>
+      </div> */}
+      <div className='quality_showcase_section'>
+        <div className='quality_showcase_info'>
+          <div className='quality_showcase_icon_container'>
+            <img src={labIcon} alt='lab_icon' className='quality_showcase_icon' id='lab_icon' />
+          </div>
+          {message1}
+        </div>
+        <div className='quality_showcase_info'>
+          <div className='quality_showcase_icon_container'>
+            <img src={uvIcon} alt='uv_icon' className='quality_showcase_icon' id='uv_icon' />
+          </div>
+          {message2}
+        </div>
+        <div className='quality_showcase_info'>
+          <div className='quality_showcase_icon_container'>
+            <img src={dustIcon} alt='dust_icon' className='quality_showcase_icon' id='dust_icon' />
+          </div>
+          {message3}
+        </div>
+        <div className='quality_showcase_info'>
+          <div className='quality_showcase_icon_container'>
+            <img src={antibacterialIcon} alt='antibacterial_icon' className='quality_showcase_icon' id='antibacterial_icon' />
+          </div>
+          {message4}
+        </div>
+      </div>
+      <div className='quality_showcase_section'>
+        <div className='quality_showcase_info_last'>
+          {message5}
+        </div>
+      </div>
     </div>
   );
 };

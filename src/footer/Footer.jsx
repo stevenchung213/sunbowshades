@@ -12,7 +12,7 @@ const Footer = ({ isMobile }) => {
       section: 'Customer Support',
       links: [
         { text: isMobile ? 'FAQs' : 'Frequently Asked Questions', link: 'faqs' },
-        { text: isMobile ? 'Commercial' : 'Commercial Inquiries', link: 'commercial' }
+        // { text: isMobile ? 'Commercial' : 'Commercial Inquiries', link: 'commercial' }
       ]
     },
     {
@@ -39,7 +39,7 @@ const Footer = ({ isMobile }) => {
     {
       section: 'Legal Information',
       links: [
-        { text: 'Privacy Policy', link: 'privacy_policy' },
+        { text: isMobile ? 'Privacy' : 'Privacy Policy', link: 'privacy_policy' },
         { text: 'Terms of Use', link: 'terms_of_use' }
       ]
     }

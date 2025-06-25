@@ -66,7 +66,7 @@ const Catalog = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   return (
     <>
@@ -90,7 +90,7 @@ const Catalog = () => {
               className='react-tabs__tab main_tab tab_category_style'
               disabled
             >
-              Type:
+              Variation:
             </Tab>
             { // render all shade styles
               Object.keys(catalog).map((style, index) => (
@@ -112,7 +112,7 @@ const Catalog = () => {
                   className='react-tabs__tab sub_tab tab_category_variation'
                   disabled
                 >
-                  Variation:
+                  Model:
                 </Tab>
                 { // render Banded style variations
                   catalog.Banded.map((style, index) => (

@@ -31,7 +31,10 @@ const Showcase = ({ isMobile }) => {
   return (
     <div id='showcase_container'>
       <div id='showcase_banner' className='banner'>
-        The Latest Trend, Banded Shades
+        THE LATEST TREND
+      </div>
+      <div className='subheader'>
+        Transform your space with Banded Shades!
       </div>
       <div className='showcase_carousel_container'>
         <Carousel slides={bandedStyles} options={carouselOptions} />

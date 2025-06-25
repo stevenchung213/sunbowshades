@@ -9,7 +9,7 @@
 .cover_photo {
   width: 100%;
   max-width: 100%;
-  background-image: url('./../assets/stock3.png');
+  background-image: url('./../assets/stock1.png');
   background-size: cover;
   margin-bottom: 2rem;
   box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
@@ -19,12 +19,21 @@
   margin: 24rem auto;
   text-align: center;
   width: 50%;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
   text-shadow: 6px 6px 10px black;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
+}
+
+.subheader {
+  display: flex;
+  margin: auto;
+  font-style: italic;
+  font-family: Lato, sans-serif;
+  font-size: 1.1rem;
+  color: rgb(71, 65, 56);
 }
 
 @keyframes fadeInAnimation {
@@ -43,12 +52,12 @@
   height: 7rem;
   align-items: center;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   line-height: 2.5rem;
   font-weight: 600;
   margin: auto;
-  text-shadow: rgb(177, 177, 177) 6px 4px 10px;
-  color: rgb(90, 89, 89);
+  color: rgb(255, 255, 255);
+  font-family: Lato, sans-serif;
 }
 
 @media only screen and (max-width: 768px) {

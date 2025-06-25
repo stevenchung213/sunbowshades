@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import PhoneInput from 'react-phone-number-input/input'
 import { isPossiblePhoneNumber, isValidPhoneNumber } from 'react-phone-number-input';
 import emailjs from "@emailjs/browser";
+import quote2 from './../assets/quote2.png';
 import './styles.css';
 
 const Contact = () => {
@@ -11,6 +12,8 @@ const Contact = () => {
     const emailJSPublicKey = process.env.EMAILJS_PUBLIC_KEY;
 
     emailjs.init(emailJSPublicKey);
+
+    window.scrollTo(0, 0);
   }, []);
 
   const emailRef = useRef();
@@ -63,64 +66,72 @@ const Contact = () => {
 
   return (
     <div id='contact_container'>
-      <section className='form_container'>
-        <form className="form" onSubmit={handleSubmit}>
-          <div className="form_group">
-            <label className='form_label'>Name:</label>
-            <input className='form_text_input' ref={nameRef} placeholder="enter your name" required />
-          </div>
-          <div className="form_group">
-            <label className='form_label'>Email:</label>
-            <input className='form_text_input' ref={emailRef} type="email" placeholder="enter your email" required />
-          </div>
-          <div className="form_group">
-            <label className='form_label'>Type:</label>
-            <select className='form_select_input' ref={typeRef} required >
-              <option className='select_option' value="residential">Residential</option>
-              <option className='select_option' value="commercial">Commercial</option>
-            </select>
-          </div>
-          <div className="form_group">
-            <label className='form_label'>Location:</label>
-            <select className='form_select_input' ref={locationRef} required >
-              <option className='select_option' value="cali">Southern California</option>
-              <option className='select_option' value="portland">Portland</option>
-              <option className='select_option' value="seattle">Seattle</option>
-              <option className='select_option' value="lasvegas">Las Vegas</option>
-            </select>
-          </div>
-          <div className="form_group">
-            <label className='form_label'>Phone #:</label>
-            <PhoneInput
-              country='US'
-              ref={phoneRef}
-              className='form_text_input'
-              placeholder='enter your phone number'
-              value={value}
-              onChange={setValue}
-              error={value ? (isValidPhoneNumber(value) ? undefined : 'invalid phone #') : 'phone # required'}
-            />
-          </div>
-          <div className="form_group">
-            <label className='form_label'>Contact preference:</label>
-            <select className='form_select_input' ref={contactPreferenceRef} required >
-              <option className='select_option' value="phone">Phone</option>
-              <option className='select_option' value="email">Email</option>
-            </select>
-          </div>
-          <div className="form_group">
-            <label className='form_label'>Referral #:</label>
-            <input className='form_text_input' ref={referralCodeRef} type="referral_code" placeholder="enter code [optional]" />
-          </div>
-          <div className="form_group">
-            <label className='form_label'>Message:</label>
-            <textarea className='form_text_input message_box' ref={messageBoxRef} type="message" placeholder="enter message [optional]" />
-          </div>
-          <button className="submit_button" disabled={loading}>
-            Submit
-          </button>
-        </form>
-      </section>
+      <div className='contact_section'>
+        <img src={quote2} alt='contact' className='contact_image' />
+        <section className='form_container'>
+          <form className="form" onSubmit={handleSubmit}>
+            <div className="form_group">
+              <label className='form_label'>Name:</label>
+              <input className='form_text_input' ref={nameRef} placeholder="enter your name" required />
+            </div>
+            <div className="form_group">
+              <label className='form_label'>Email:</label>
+              <input className='form_text_input' ref={emailRef} type="email" placeholder="enter your email" required />
+            </div>
+            <div className="form_group">
+              <label className='form_label'>Type:</label>
+              <select className='form_select_input' ref={typeRef} required >
+                <option className='select_option' value="residential">Residential</option>
+                <option className='select_option' value="commercial">Commercial</option>
+              </select>
+            </div>
+            <div className="form_group">
+              <label className='form_label'>Location:</label>
+              <select className='form_select_input' ref={locationRef} required >
+                <option className='select_option' value="cali">Southern California</option>
+                <option className='select_option' value="portland">Portland</option>
+                <option className='select_option' value="seattle">Seattle</option>
+                <option className='select_option' value="lasvegas">Las Vegas</option>
+              </select>
+            </div>
+            <div className="form_group">
+              <label className='form_label'>Phone #:</label>
+              <PhoneInput
+                country='US'
+                ref={phoneRef}
+                className='form_text_input'
+                placeholder='enter your phone number'
+                value={value}
+                onChange={setValue}
+                error={value ? (isValidPhoneNumber(value) ? undefined : 'invalid phone #') : 'phone # required'}
+              />
+            </div>
+            <div className="form_group">
+              <label className='form_label'>Contact preference:</label>
+              <select className='form_select_input' ref={contactPreferenceRef} required >
+                <option className='select_option' value="phone">Phone</option>
+                <option className='select_option' value="email">Email</option>
+              </select>
+            </div>
+            <div className="form_group">
+              <label className='form_label'>Referral #:</label>
+              <input className='form_text_input' ref={referralCodeRef} type="referral_code" placeholder="enter code [optional]" />
+            </div>
+            <div className="form_group">
+              <label className='form_label'>Message:</label>
+              <textarea className='form_text_input message_box' ref={messageBoxRef} type="message" placeholder="enter message [optional]" />
+            </div>
+            <button className="submit_button" disabled={loading}>
+              Submit
+            </button>
+          </form>
+        </section>
+      </div>
+      <div id='contact_message' className='subheader'>
+        Thank you for your interest!
+        <br />
+        One of our experts will contact you as soon as possible.
+      </div>
     </div>
   );
 };
