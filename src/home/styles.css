@@ -83,3 +83,20 @@
     margin-top: 1rem;
   }
 }
+
+@media only screen and (max-width: 380px) {
+  .slogan {
+    width: 100%;
+    margin: auto;
+    font-size: 1.8rem;
+    padding: 0 1rem;
+    padding-top: 18rem;
+    padding-bottom: 10rem;
+  }
+
+  .banner {
+    font-size: 1.6rem;
+    padding: 0 4rem;
+    margin-top: 1rem;
+  }
+}

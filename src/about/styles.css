@@ -48,3 +48,24 @@
     padding: 1rem;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  #about_container {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .about_info_container {
+    line-height: 1.4rem;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .about_info_container p {
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+    padding: 1rem;
+  }
+}

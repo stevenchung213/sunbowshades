@@ -83,6 +83,64 @@ import wainwrightBlackout_light_beige from './../assets/images/banded/wainwright
 import wainwrightBlackout_misty_green from './../assets/images/banded/wainwright_blackout/misty_green.png';
 import wainwrightBlackout_silver_white from './../assets/images/banded/wainwright_blackout/silver_white.png';
 import wainwrightBlackout_warm_grey from './../assets/images/banded/wainwright_blackout/warm_grey.png';
+import manresa from './../assets/images/banded/manresa/manresa.png';
+import manresa_beige from './../assets/images/banded/manresa/beige.png';
+import manresa_blue from './../assets/images/banded/manresa/blue.png';
+import manresa_brown from './../assets/images/banded/manresa/brown.png';
+import manresa_grey from './../assets/images/banded/manresa/grey.png';
+import manresa_ivory from './../assets/images/banded/manresa/ivory.png';
+import manresa_white from './../assets/images/banded/manresa/white.png';
+import aspen from './../assets/images/banded/aspen/aspen.png';
+import aspen_beige from './../assets/images/banded/aspen/beige.png';
+import aspen_charcoal from './../assets/images/banded/aspen/charcoal.png';
+import aspen_cocoa from './../assets/images/banded/aspen/cocoa.png';
+import aspen_grey from './../assets/images/banded/aspen/grey.png';
+import aspen_ivory from './../assets/images/banded/aspen/ivory.png';
+import aspen_white from './../assets/images/banded/aspen/white.png';
+import dundee from './../assets/images/banded/dundee/dundee.png';
+import dundee_beige from './../assets/images/banded/dundee/beige.png';
+import dundee_black from './../assets/images/banded/dundee/black.png';
+import dundee_grey from './../assets/images/banded/dundee/grey.png';
+import dundee_ivory from './../assets/images/banded/dundee/ivory.png';
+import dundee_mocha from './../assets/images/banded/dundee/mocha.png';
+import dundee_sky_blue from './../assets/images/banded/dundee/sky_blue.png';
+import dundee_white from './../assets/images/banded/dundee/white.png';
+import nantes from './../assets/images/banded/nantes_atb/nantes_atb.png';
+import nantes_dark_grey from './../assets/images/banded/nantes_atb/dark_grey.png';
+import nantes_grey from './../assets/images/banded/nantes_atb/grey.png';
+import nantes_ivory from './../assets/images/banded/nantes_atb/ivory.png';
+import nantes_light_grey from './../assets/images/banded/nantes_atb/light_grey.png';
+import nantes_peach from './../assets/images/banded/nantes_atb/peach.png';
+import nantes_white from './../assets/images/banded/nantes_atb/white.png';
+import bastia from './../assets/images/banded/bastia/bastia.png';
+import bastia_beige from './../assets/images/banded/bastia/beige.png';
+import bastia_grey from './../assets/images/banded/bastia/grey.png';
+import bastia_ivory from './../assets/images/banded/bastia/ivory.png';
+import bastia_taupe from './../assets/images/banded/bastia/taupe.png';
+import bastia_white from './../assets/images/banded/bastia/white.png';
+import venus from './../assets/images/banded/venus_atb/venus_atb.png';
+import venus_baby_blue from './../assets/images/banded/venus_atb/baby_blue.png';
+import venus_baby_green from './../assets/images/banded/venus_atb/baby_green.png';
+import venus_baby_pink from './../assets/images/banded/venus_atb/baby_pink.png';
+import venus_beige from './../assets/images/banded/venus_atb/beige.png';
+import venus_dark_grey from './../assets/images/banded/venus_atb/dark_grey.png';
+import venus_grey from './../assets/images/banded/venus_atb/grey.png';
+import venus_ivory from './../assets/images/banded/venus_atb/ivory.png';
+import venus_sky_blue from './../assets/images/banded/venus_atb/sky_blue.png';
+import venus_white from './../assets/images/banded/venus_atb/white.png';
+import muko from './../assets/images/banded/muko/muko.png';
+import muko_beige from './../assets/images/banded/muko/beige.png';
+import muko_black from './../assets/images/banded/muko/black.png';
+import muko_brown from './../assets/images/banded/muko/brown.png';
+import muko_choco from './../assets/images/banded/muko/choco.png';
+import muko_ivory from './../assets/images/banded/muko/ivory.png';
+import tvoli from './../assets/images/banded/t-voli_atb/t-voli_atb.png';
+import tvoli_blue_berry from './../assets/images/banded/t-voli_atb/blue_berry.png';
+import tvoli_dark_grey from './../assets/images/banded/t-voli_atb/dark_grey.png';
+import tvoli_grey from './../assets/images/banded/t-voli_atb/grey.png';
+import tvoli_ivory from './../assets/images/banded/t-voli_atb/ivory.png';
+import tvoli_khaki from './../assets/images/banded/t-voli_atb/khaki.png';
+import tvoli_white from './../assets/images/banded/t-voli_atb/white.png';
 
 const Catalog = () => {
   const [showAlert1, removeAlert1] = useState(true);
@@ -91,6 +149,66 @@ const Catalog = () => {
 
   const catalog = {
     Banded: [
+      {
+        name: 'Venus', img: venus, colors: [
+          { src: venus_baby_blue, text: 'Baby Blue' },
+          { src: venus_baby_green, text: 'Baby Green' },
+          { src: venus_baby_pink, text: 'Baby Pink' },
+          { src: venus_beige, text: 'Beige' },
+          { src: venus_dark_grey, text: 'Dark Grey' },
+          { src: venus_grey, text: 'Grey' },
+          { src: venus_ivory, text: 'Ivory' },
+          { src: venus_sky_blue, text: 'Sky Blue' },
+          { src: venus_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '285cm',
+          weight: ['88g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.26mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'All colors'
+        }
+      },
+      {
+        name: 'T-Voli', img: tvoli, colors: [
+          { src: tvoli_blue_berry, text: 'Blue Berry' },
+          { src: tvoli_dark_grey, text: 'Dark Grey' },
+          { src: tvoli_grey, text: 'Grey' },
+          { src: tvoli_ivory, text: 'Ivory' },
+          { src: tvoli_khaki, text: 'Khaki' },
+          { src: tvoli_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '285cm',
+          weight: ['105.3g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.45mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'Select colors',
+          repeatSize: ['Solid 11.5cm / Mesh 9cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'All colors'
+        }
+      },
+      {
+        name: 'Nantes', img: nantes, colors: [
+          { src: nantes_dark_grey, text: 'Dark Grey' },
+          { src: nantes_grey, text: 'Grey' },
+          { src: nantes_ivory, text: 'Ivory' },
+          { src: nantes_light_grey, text: 'Light Grey' },
+          { src: nantes_peach, text: 'Peach' },
+          { src: nantes_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['128g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.36mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'All colors'
+        }
+      },
       {
         name: 'Eureka Blackout', img: eurekaBlackout, colors: [
           { src: eurekaBlackout_beige, text: 'Beige' },
@@ -107,7 +225,7 @@ const Catalog = () => {
           maxWidth: '280cm',
           weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
           thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span key={3}>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
+          fireRetardant: 'Select colors',
           repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
           antibacterial: 'N/A'
         }
@@ -123,11 +241,11 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: 'N/A',
+          thickness: 'N/A',
+          fireRetardant: 'All colors',
+          repeatSize: ['Solid 12cm / Mesh 8cm ', <span key={1}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
       {
@@ -144,11 +262,11 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: ['180g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['Solid 0.44mm', ' / Mesh 0.14mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'Select colors',
+          repeatSize: ['Solid 12cm / Mesh 9cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
       {
@@ -164,11 +282,11 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: ['160g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.42mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'Select colors',
+          repeatSize: ['Solid 10cm / Mesh 6cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
       {
@@ -185,11 +303,11 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: ['176g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.46mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
       {
@@ -207,11 +325,11 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: 'N/A',
+          thickness: 'N/A',
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 12cm / Mesh 8cm ', <span key={1}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
       {
@@ -227,11 +345,11 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: ['160g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.39mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'All colors',
+          repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
       {
@@ -245,11 +363,11 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: ['148g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.37mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 12cm / Mesh 9cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
       {
@@ -265,11 +383,11 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: ['178g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.51mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
       {
@@ -284,11 +402,105 @@ const Catalog = () => {
         specs: {
           composition: '100% Polyester',
           maxWidth: '280cm',
-          weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
-          thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span>&plusmn;</span>, '5%'],
-          fireRetardant: 'Certain colors only',
-          repeatSize: ['Solid 10cm / Mesh 7cm ', <span>&plusmn;</span>, '5%'],
-          antibacterial: 'NA'
+          weight: ['156g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['Solid 0.34mm', ' / Mesh 0.07mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'All colors',
+          repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Manresa', img: manresa, colors: [
+          { src: manresa_beige, text: 'Beige' },
+          { src: manresa_blue, text: 'blue' },
+          { src: manresa_brown, text: 'Brown' },
+          { src: manresa_grey, text: 'Grey' },
+          { src: manresa_ivory, text: 'Ivory' },
+          { src: manresa_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['132.8g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.38mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 7.5cm / Mesh 5cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Aspen', img: aspen, colors: [
+          { src: aspen_beige, text: 'Beige' },
+          { src: aspen_charcoal, text: 'Charcoal' },
+          { src: aspen_cocoa, text: 'Cocoa' },
+          { src: aspen_grey, text: 'Grey' },
+          { src: aspen_ivory, text: 'Ivory' },
+          { src: aspen_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['166g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['Solid 0.75mm', ' / Mesh 0.14mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 11.5cm / Mesh 8cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Dundee', img: dundee, colors: [
+          { src: dundee_beige, text: 'Beige' },
+          { src: dundee_black, text: 'Black' },
+          { src: dundee_grey, text: 'Grey' },
+          { src: dundee_ivory, text: 'Ivory' },
+          { src: dundee_mocha, text: 'Mocha' },
+          { src: dundee_sky_blue, text: 'Sky Blue' },
+          { src: dundee_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['166g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.45mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Bastia', img: bastia, colors: [
+          { src: bastia_beige, text: 'Beige' },
+          { src: bastia_grey, text: 'Grey' },
+          { src: bastia_ivory, text: 'Ivory' },
+          { src: bastia_taupe, text: 'Taupe' },
+          { src: bastia_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '320cm',
+          weight: ['118g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.35mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'Select colors',
+          repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Muko', img: muko, colors: [
+          { src: muko_beige, text: 'Beige' },
+          { src: muko_black, text: 'Black' },
+          { src: muko_brown, text: 'Brown' },
+          { src: muko_choco, text: 'Choco' },
+          { src: muko_ivory, text: 'Ivory' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: 'N/A',
+          thickness: 'N/A',
+          fireRetardant: 'N/A',
+          repeatSize: ['Solid 3.5cm / Mesh 2cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'N/A'
         }
       },
     ],
@@ -344,7 +556,7 @@ const Catalog = () => {
             >
               Variation:
             </Tab>
-            { // render all shade styles
+            { // render shade variations
               Object.keys(catalog).map((style, index) => (
                 <Tab
                   className='react-tabs__tab main_tab'
@@ -366,10 +578,10 @@ const Catalog = () => {
                 >
                   Model:
                 </Tab>
-                { // render Banded style variations
+                { // render Banded style models
                   catalog.Banded.map((style, index) => (
                     <Tab
-                      className='react-tabs__tab sub_tab'
+                      className={style.specs.antibacterial !== 'N/A' ? 'react-tabs__tab sub_tab antibacterial_tab' : 'react-tabs__tab sub_tab'}
                       key={`banded_tab_${index}`}
                     >
                       {style.name}

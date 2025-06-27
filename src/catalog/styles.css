@@ -112,6 +112,10 @@
   font-weight: 400;
 }
 
+.antibacterial_tab {
+  color: rgb(90, 172, 90);
+}
+
 .tab_container {
   display: flex;
   flex-direction: row;
@@ -120,8 +124,10 @@
 .tab_image {
   width: 60%;
   min-width: 60%;
+  max-width: 60%;
   height: 60%;
   min-height: 60%;
+  max-height: 60%;
   object-fit: fill;
   padding: 1.5rem;
   margin: auto;
@@ -146,13 +152,17 @@
 }
 
 .spec_key {
+  height: 1.5rem;
   color: rgb(90, 89, 89);
   padding-left: 0.5rem;
   font-weight: 600;
+  line-height: 1.5rem;
 }
 
 .spec_value {
+  height: 1.5rem;
   color: rgb(90, 89, 89);
+  line-height: 1.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -208,8 +218,6 @@
     background-color: white;
     border-radius: 8px;
     padding: 1rem 0.1rem;
-    /* min-height: 100%; */
-    /* max-height: 100%; */
     margin-bottom: 0.5rem;
   }
 
