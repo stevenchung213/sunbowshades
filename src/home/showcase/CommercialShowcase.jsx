@@ -1,15 +1,10 @@
 import React from 'react';
-import Carousel from '../../shared/Carousel/Carousel';
 import './styles.css';
 import corp1 from './../../assets/corporate1.png';
 import corp2 from './../../assets/corporate2.png';
-import corp3 from './../../assets/corporate3.png';
-import corp4 from './../../assets/corporate4.png';
 
 const CommercialShowcase = ({ isMobile }) => {
 
-  const carouselOptions = { align: 'start', loop: true };
-  const corporate = [corp4, corp2, corp3, corp1];
   const message1 = [
     'We are a trusted provider of window treatment solutions, offering both residential and commercial applications designed to enhance your space with style, functionality, and durability.',
     <br key={1} />,

@@ -20,7 +20,7 @@ const EmblaCarousel = ({ slides, options, identifier }) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className={"embla"}>
+    <section className={identifier ? identifier + "_embla" : "embla"}>
       <div className={identifier ? identifier + "_embla__viewport" : "embla__viewport"} ref={emblaRef}>
         <div className={identifier ? identifier + "_embla__container" : "embla__container"}>
           {
@@ -29,13 +29,18 @@ const EmblaCarousel = ({ slides, options, identifier }) => {
                 <div className={identifier ? identifier + "_embla__slide__number" : "embla__slide__number"}>
                   <LazyLoadImage
                     className={identifier ? identifier + '_embla__slide__photo' : 'embla__slide__photo'}
-                    src={slide}
+                    src={slide.src}
                     alt={'slide-' + index}
                     effect='blur'
                     wrapperProps={{
                       style: { transitionDelay: "1s" },
                     }}
                   />
+                  <div
+                    className={identifier ? identifier + "_embla__slide__caption" : "embla__slide__caption"}
+                  >
+                    {slide.text}
+                  </div>
                 </div>
               </div>
             ))
@@ -44,8 +49,8 @@ const EmblaCarousel = ({ slides, options, identifier }) => {
       </div>
       <div className={identifier ? identifier + "_embla__controls" : "embla__controls"}>
         <div className={identifier ? identifier + "_embla__buttons" : "embla__buttons"}>
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+          <PrevButton identifier={identifier} onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+          <NextButton identifier={identifier} onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>
     </section>

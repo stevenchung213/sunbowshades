@@ -9,9 +9,9 @@ const CommercialShowcase = lazy(() => import('./showcase/CommercialShowcase'));
 
 const Home = ({ isMobile }) => {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <main id='home_container'>

@@ -16,16 +16,16 @@ const Showcase = ({ isMobile }) => {
 
   const carouselOptions = { align: 'start', loop: true };
   const bandedStyles = [
-    banded_nias,
-    banded_black_cottage,
-    banded_crosse,
-    banded_diego,
-    banded_manresa_wide,
-    banded_manresa,
-    banded_yola,
-    banded_omaha,
-    banded_rumoi_blackout,
-    banded_valleta_blackout_onetone,
+    { src: banded_nias, text: 'Nias' },
+    { src: banded_crosse, text: 'Crosse' },
+    { src: banded_black_cottage, text: 'Black Cottage' },
+    { src: banded_diego, text: 'Diego' },
+    { src: banded_manresa_wide, text: 'Manresa Wide' },
+    { src: banded_manresa, text: 'Manresa' },
+    { src: banded_yola, text: 'Yola' },
+    { src: banded_omaha, text: 'Omaha' },
+    { src: banded_rumoi_blackout, text: 'Rumoi Blackout' },
+    { src: banded_valleta_blackout_onetone, text: 'Valletta Blackout' },
   ];
 
   return (

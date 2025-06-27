@@ -16,7 +16,7 @@
 }
 
 .about_info_container p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-style: italic;
   padding-left: 1rem;
 }
@@ -24,6 +24,8 @@
 .about_image {
   border-radius: 40px;
   margin-top: 1rem;
+  width: 35rem;
+  margin: auto;
 }
 
 @media only screen and (max-width: 768px) {

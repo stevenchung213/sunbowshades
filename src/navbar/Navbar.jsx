@@ -96,6 +96,7 @@ const Navbar = ({ isMobile }) => {
                 <NavLink
                   to='catalog'
                   className={({ isActive }) => isActive ? 'navbar_link active' : 'navbar_link'}
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Catalog
                 </NavLink>
