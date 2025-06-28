@@ -209,6 +209,98 @@ import crosse_sunset_gold from './../assets/images/banded/crosse/sunset_gold.png
 import crosse_taupe from './../assets/images/banded/crosse/taupe.png';
 import crosse_wine from './../assets/images/banded/crosse/wine.png';
 import crosse_yellow from './../assets/images/banded/crosse/yellow.png';
+import bantry from './../assets/images/roller/bantry/bantry.png';
+import bantry_beige from './../assets/images/roller/bantry/beige.png';
+import bantry_brown from './../assets/images/roller/bantry/brown.png';
+import bantry_charcoal from './../assets/images/roller/bantry/charcoal.png';
+import bantry_cream from './../assets/images/roller/bantry/cream.png';
+import bantry_grey from './../assets/images/roller/bantry/grey.png';
+import bantry_white from './../assets/images/roller/bantry/white.png';
+import buffalo from './../assets/images/roller/buffalo_blackout/buffalo_blackout.png';
+import buffalo_aqua from './../assets/images/roller/buffalo_blackout/aqua.png';
+import buffalo_black from './../assets/images/roller/buffalo_blackout/black.png';
+import buffalo_blue_fog from './../assets/images/roller/buffalo_blackout/blue_fog.png';
+import buffalo_blue_indigo from './../assets/images/roller/buffalo_blackout/blue_indigo.png';
+import buffalo_burro from './../assets/images/roller/buffalo_blackout/burro.png';
+import buffalo_charcoal from './../assets/images/roller/buffalo_blackout/charcoal.png';
+import buffalo_cloud_cream from './../assets/images/roller/buffalo_blackout/cloud_cream.png';
+import buffalo_corn_skin from './../assets/images/roller/buffalo_blackout/corn_skin.png';
+import buffalo_dark_grey from './../assets/images/roller/buffalo_blackout/dark_grey.png';
+import buffalo_elephant_skin from './../assets/images/roller/buffalo_blackout/elephant_skin.png';
+import buffalo_light_grey from './../assets/images/roller/buffalo_blackout/light_grey.png';
+import buffalo_navy from './../assets/images/roller/buffalo_blackout/navy.png';
+import buffalo_power_blue from './../assets/images/roller/buffalo_blackout/power_blue.png';
+import buffalo_quarry from './../assets/images/roller/buffalo_blackout/quarry.png';
+import buffalo_smoke from './../assets/images/roller/buffalo_blackout/smoke.png';
+import buffalo_tan from './../assets/images/roller/buffalo_blackout/tan.png';
+import buffalo_taupe from './../assets/images/roller/buffalo_blackout/taupe.png';
+import newman_trance from './../assets/images/roller/newman_trance/newman_trance.png';
+import newman_trance_black from './../assets/images/roller/newman_trance/black.png';
+import newman_trance_blue from './../assets/images/roller/newman_trance/blue.png';
+import newman_trance_brown from './../assets/images/roller/newman_trance/brown.png';
+import newman_trance_charcoal from './../assets/images/roller/newman_trance/charcoal.png';
+import newman_trance_dark_beige from './../assets/images/roller/newman_trance/dark_beige.png';
+import newman_trance_dark_grey from './../assets/images/roller/newman_trance/dark_grey.png';
+import newman_trance_ivory from './../assets/images/roller/newman_trance/ivory.png';
+import newman_trance_light_beige from './../assets/images/roller/newman_trance/light_beige.png';
+import newman_trance_light_grey from './../assets/images/roller/newman_trance/light_grey.png';
+import newman_trance_mint from './../assets/images/roller/newman_trance/mint.png';
+import newman_trance_mustard from './../assets/images/roller/newman_trance/mustard.png';
+import newman_trance_white from './../assets/images/roller/newman_trance/white.png';
+import newman_trance_wine from './../assets/images/roller/newman_trance/wine.png';
+import remash1 from './../assets/images/roller/remash1/remash_1.png';
+import remash1_grey from './../assets/images/roller/remash1/grey.png';
+import remash1_ivory from './../assets/images/roller/remash1/ivory.png';
+import remash1_white from './../assets/images/roller/remash1/white.png';
+import remash3 from './../assets/images/roller/remash3/remash_3.png';
+import remash3_brown from './../assets/images/roller/remash3/brown.png';
+import remash3_charcoal from './../assets/images/roller/remash3/charcoal.png';
+import remash3_grey from './../assets/images/roller/remash3/grey.png';
+import remash3_ivory from './../assets/images/roller/remash3/ivory.png';
+import remash3_navy from './../assets/images/roller/remash3/navy.png';
+import remash3_white from './../assets/images/roller/remash3/white.png';
+import remash3_design from './../assets/images/roller/remash3_design/remash_3_design.png';
+import remash3_design_beige_and_brown from './../assets/images/roller/remash3_design/beige_and_brown.png';
+import remash3_design_grey_and_charcoal from './../assets/images/roller/remash3_design/grey_and_charcoal.png';
+import remash3_design_ivory_and_beige from './../assets/images/roller/remash3_design/ivory_and_beige.png';
+import remash3_design_white_and_dark_grey from './../assets/images/roller/remash3_design/white_and_dark_grey.png';
+import remash3_design_white_and_grey from './../assets/images/roller/remash3_design/white_and_grey.png';
+import remash3_design_white_and_ivory from './../assets/images/roller/remash3_design/white_and_ivory.png';
+import remash3_design_white_and_white from './../assets/images/roller/remash3_design/white_and_white.png';
+import rockpile from './../assets/images/roller/rockpile_blackout/rockpile_blackout.png';
+import rockpile_choco from './../assets/images/roller/rockpile_blackout/choco.png';
+import rockpile_green from './../assets/images/roller/rockpile_blackout/green.png';
+import rockpile_grey from './../assets/images/roller/rockpile_blackout/grey.png';
+import rockpile_ivory from './../assets/images/roller/rockpile_blackout/ivory.png';
+import rockpile_khaki from './../assets/images/roller/rockpile_blackout/khaki.png';
+import rockpile_lemon from './../assets/images/roller/rockpile_blackout/lemon.png';
+import rockpile_milk from './../assets/images/roller/rockpile_blackout/milk.png';
+import rockpile_pink from './../assets/images/roller/rockpile_blackout/pink.png';
+import rockpile_purple from './../assets/images/roller/rockpile_blackout/purple.png';
+import rockpile_white from './../assets/images/roller/rockpile_blackout/white.png';
+import tide from './../assets/images/roller/tide/tide.png';
+import tide_blue from './../assets/images/roller/tide/blue.png';
+import tide_dark_grey from './../assets/images/roller/tide/dark_grey.png';
+import tide_green from './../assets/images/roller/tide/green.png';
+import tide_grey from './../assets/images/roller/tide/grey.png';
+import tide_ice_white from './../assets/images/roller/tide/ice_white.png';
+import tide_ivory from './../assets/images/roller/tide/ivory.png';
+import tide_navy from './../assets/images/roller/tide/navy.png';
+import tide_peach from './../assets/images/roller/tide/peach.png';
+import tide_pink from './../assets/images/roller/tide/pink.png';
+import tide_royal_blue from './../assets/images/roller/tide/royal_blue.png';
+import tide_taupe from './../assets/images/roller/tide/taupe.png';
+import tide_white from './../assets/images/roller/tide/white.png';
+import tide_yellow from './../assets/images/roller/tide/yellow.png';
+import yap from './../assets/images/roller/yap/yap.png';
+import yap_brown from './../assets/images/roller/yap/brown.png';
+import yap_charcoal from './../assets/images/roller/yap/charcoal.png';
+import yap_green from './../assets/images/roller/yap/green.png';
+import yap_grey from './../assets/images/roller/yap/grey.png';
+import yap_ivory from './../assets/images/roller/yap/ivory.png';
+import yap_sand from './../assets/images/roller/yap/sand.png';
+import yap_white from './../assets/images/roller/yap/white.png';
+
 
 const Catalog = () => {
   const [showAlert1, removeAlert1] = useState(true);
@@ -665,14 +757,207 @@ const Catalog = () => {
       },
     ],
     Roller: [
-      { name: 'Roller 1', img: 'imgSrc1' },
-      { name: 'Roller 2', img: 'imgSrc2' },
-      { name: 'Roller 3', img: 'imgSrc3' },
-      { name: 'Roller 4', img: 'imgSrc4' },
-      { name: 'Roller 5', img: 'imgSrc5' },
-      { name: 'Roller 6', img: 'imgSrc6' },
+      {
+        name: 'Newman Trance', img: newman_trance, colors: [
+          { src: newman_trance_black, text: 'Black' },
+          { src: newman_trance_blue, text: 'Blue' },
+          { src: newman_trance_brown, text: 'Brown' },
+          { src: newman_trance_charcoal, text: 'Charcoal' },
+          { src: newman_trance_dark_beige, text: 'Dark Beige' },
+          { src: newman_trance_dark_grey, text: 'Dark Grey' },
+          { src: newman_trance_ivory, text: 'Ivory' },
+          { src: newman_trance_light_beige, text: 'Light Beige' },
+          { src: newman_trance_light_grey, text: 'Light Grey' },
+          { src: newman_trance_mint, text: 'Mint' },
+          { src: newman_trance_mustard, text: 'Mustard' },
+          { src: newman_trance_white, text: 'White' },
+          { src: newman_trance_wine, text: 'Wine' },
+
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '300cm',
+          weight: ['208g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.32mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'All colors',
+          repeatSize: 'N/A',
+          antibacterial: 'All colors'
+        }
+      },
+      {
+        name: 'Remash 1%', img: remash1, colors: [
+          { src: remash1_grey, text: 'Grey' },
+          { src: remash1_ivory, text: 'Ivory' },
+          { src: remash1_white, text: 'White' },
+        ],
+        specs: {
+          composition: '24% Polyester / 76% PVC',
+          maxWidth: '300cm',
+          weight: ['497g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.65mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: 'N/A',
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Remash 3%', img: remash3, colors: [
+          { src: remash3_brown, text: 'Brown' },
+          { src: remash3_charcoal, text: 'Charcoal' },
+          { src: remash3_grey, text: 'Grey' },
+          { src: remash3_ivory, text: 'Ivory' },
+          { src: remash3_navy, text: 'Navy' },
+          { src: remash3_white, text: 'White' },
+        ],
+        specs: {
+          composition: '24% Polyester / 76% PVC',
+          maxWidth: '300cm',
+          weight: ['445g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.58mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: 'N/A',
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Remash 3% Design', img: remash3_design, colors: [
+          { src: remash3_design_beige_and_brown, text: 'Beige & Brown' },
+          { src: remash3_design_grey_and_charcoal, text: 'Grey & Charcoal' },
+          { src: remash3_design_ivory_and_beige, text: 'Ivory & Beige' },
+          { src: remash3_design_white_and_dark_grey, text: 'White & Dark Grey' },
+          { src: remash3_design_white_and_grey, text: 'White & Grey' },
+          { src: remash3_design_white_and_ivory, text: 'White & Ivory' },
+          { src: remash3_design_white_and_white, text: 'White & White' },
+        ],
+        specs: {
+          composition: '24% Polyester / 76% PVC',
+          maxWidth: '300cm',
+          weight: ['465g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.62mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: 'N/A',
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Bantry', img: bantry, colors: [
+          { src: bantry_beige, text: 'Beige' },
+          { src: bantry_brown, text: 'Brown' },
+          { src: bantry_charcoal, text: 'Charcoal' },
+          { src: bantry_cream, text: 'Cream' },
+          { src: bantry_grey, text: 'Grey' },
+          { src: bantry_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['211g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.53mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: 'N/A',
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Yap', img: yap, colors: [
+          { src: yap_brown, text: 'Brown' },
+          { src: yap_charcoal, text: 'Charcoal' },
+          { src: yap_green, text: 'Green' },
+          { src: yap_grey, text: 'Grey' },
+          { src: yap_ivory, text: 'Ivory' },
+          { src: yap_sand, text: 'Sand' },
+          { src: yap_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['211g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.53mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'N/A',
+          repeatSize: 'N/A',
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Rockpile Blackout', img: rockpile, colors: [
+          { src: rockpile_choco, text: 'Choco' },
+          { src: rockpile_green, text: 'Green' },
+          { src: rockpile_grey, text: 'Grey' },
+          { src: rockpile_ivory, text: 'Ivory' },
+          { src: rockpile_khaki, text: 'Khaki' },
+          { src: rockpile_lemon, text: 'Lemon' },
+          { src: rockpile_pink, text: 'Pink' },
+          { src: rockpile_purple, text: 'Purple' },
+          { src: rockpile_white, text: 'White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['298g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.26mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'All colors',
+          repeatSize: 'N/A',
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Buffalo Blackout', img: buffalo, colors: [
+          { src: buffalo_aqua, text: 'Aqua' },
+          { src: buffalo_black, text: 'Black' },
+          { src: buffalo_blue_fog, text: 'Blue Fog' },
+          { src: buffalo_blue_indigo, text: 'Blue Indigo' },
+          { src: buffalo_burro, text: 'Burro' },
+          { src: buffalo_charcoal, text: 'Charcoal' },
+          { src: buffalo_cloud_cream, text: 'Cloud Cream' },
+          { src: buffalo_corn_skin, text: 'Corn' },
+          { src: buffalo_dark_grey, text: 'Dark Grey' },
+          { src: buffalo_elephant_skin, text: 'Elephant' },
+          { src: buffalo_light_grey, text: 'Light Grey' },
+          { src: buffalo_navy, text: 'Navy' },
+          { src: buffalo_power_blue, text: 'Power Blue' },
+          { src: buffalo_quarry, text: 'Quarry' },
+          { src: buffalo_smoke, text: 'Smoke' },
+          { src: buffalo_tan, text: 'Tan' },
+          { src: buffalo_taupe, text: 'Taupe' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['310g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.25mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'All colors',
+          repeatSize: 'N/A',
+          antibacterial: 'N/A'
+        }
+      },
+      {
+        name: 'Tide', img: tide, colors: [
+          { src: tide_blue, text: 'Brown' },
+          { src: tide_dark_grey, text: 'Charcoal' },
+          { src: tide_green, text: 'Green' },
+          { src: tide_grey, text: 'Grey' },
+          { src: tide_ice_white, text: 'Ivory' },
+          { src: tide_ivory, text: 'Sand' },
+          { src: tide_navy, text: 'White' },
+          { src: tide_peach, text: 'Brown' },
+          { src: tide_pink, text: 'Charcoal' },
+          { src: tide_royal_blue, text: 'Green' },
+          { src: tide_taupe, text: 'Grey' },
+          { src: tide_white, text: 'Ivory' },
+          { src: tide_yellow, text: 'Sand' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: 'N/A',
+          thickness: 'N/A',
+          fireRetardant: 'Certain colors',
+          repeatSize: 'N/A',
+          antibacterial: 'N/A'
+        }
+      },
     ],
-    'Laser Cut': [
+    'Laser Roll': [
       { name: 'Laser Print 1', img: 'imgSrc1' },
       { name: 'Laser Print 2', img: 'imgSrc2' },
       { name: 'Laser Print 3', img: 'imgSrc3' },
@@ -687,8 +972,6 @@ const Catalog = () => {
       { name: 'Graphic 5', img: 'imgSrc5' },
     ]
   };
-
-  console.log(catalog.Banded.length)
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -807,10 +1090,10 @@ const Catalog = () => {
                 >
                   Variation:
                 </Tab>
-                { // render Roller style variations
+                { // render Roller style models
                   catalog.Roller.map((style, index) => (
                     <Tab
-                      className='react-tabs__tab sub_tab'
+                      className={style.specs.antibacterial !== 'N/A' ? 'react-tabs__tab sub_tab antibacterial_tab' : 'react-tabs__tab sub_tab'}
                       key={`roller_tab_${index}`}
                     >
                       {style.name}
@@ -826,15 +1109,38 @@ const Catalog = () => {
                     className='react-tabs__tab-panel'
                     key={`roller_tab_img_${index}`}
                   >
-
                     <div className='tab_container'>
-                      <img
-                        className='tab_image'
-                        src={style.img}
-                        alt={'banded_' + index}
-                      />
+                      <div className='tab_image_container'>
+                        <img
+                          className='tab_image'
+                          src={style.img}
+                          alt={'roller_' + index}
+                        />
+                      </div>
                       <div className='tab_info_container'>
-
+                        <div className='specs_container'>
+                          <div className='spec_key'>Composition:</div>
+                          <div className='spec_value'>{style.specs.composition}</div>
+                          <div className='spec_key'>Max Width:</div>
+                          <div className='spec_value'>{style.specs.maxWidth}</div>
+                          <div className='spec_key'>Weight:</div>
+                          <div className='spec_value'>{style.specs.weight}</div>
+                          <div className='spec_key'>Thickness:</div>
+                          <div className='spec_value'>{style.specs.thickness}</div>
+                          <div className='spec_key'>Dimensions:</div>
+                          <div className='spec_value'>{style.specs.repeatSize}</div>
+                          <div className='spec_key'>Fire Retardant:</div>
+                          <div className='spec_value'>{style.specs.fireRetardant}</div>
+                          <div className='spec_key'>Antibacterial:</div>
+                          <div className='spec_value'>{style.specs.antibacterial}</div>
+                        </div>
+                        <div className='colors_container'>
+                          <Carousel
+                            slides={style.colors}
+                            options={carouselOptions}
+                            identifier='colors'
+                          />
+                        </div>
                       </div>
                     </div>
                   </TabPanel>
@@ -852,7 +1158,7 @@ const Catalog = () => {
                   Variation:
                 </Tab>
                 { // render Laser style variations
-                  catalog['Laser Cut'].map((style, index) => (
+                  catalog['Laser Roll'].map((style, index) => (
                     <Tab
                       className='react-tabs__tab sub_tab'
                       key={`laser_tab_${index}`}
@@ -865,7 +1171,7 @@ const Catalog = () => {
               <TabPanel>
               </TabPanel>
               { // render Laser style images
-                catalog['Laser Cut'].map((style, index) => (
+                catalog['Laser Roll'].map((style, index) => (
                   <TabPanel
                     className='react-tabs__tab-panel'
                     key={`laser_tab_img_${index}`}
