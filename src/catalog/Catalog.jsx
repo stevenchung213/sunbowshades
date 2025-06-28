@@ -141,6 +141,74 @@ import tvoli_grey from './../assets/images/banded/t-voli_atb/grey.png';
 import tvoli_ivory from './../assets/images/banded/t-voli_atb/ivory.png';
 import tvoli_khaki from './../assets/images/banded/t-voli_atb/khaki.png';
 import tvoli_white from './../assets/images/banded/t-voli_atb/white.png';
+import omaha from './../assets/images/banded/omaha/omaha.png';
+import omaha_beige from './../assets/images/banded/omaha/beige.png';
+import omaha_black from './../assets/images/banded/omaha/black.png';
+import omaha_brown from './../assets/images/banded/omaha/brown.png';
+import omaha_charcoal from './../assets/images/banded/omaha/charcoal.png';
+import omaha_cherry from './../assets/images/banded/omaha/cherry.png';
+import omaha_choco from './../assets/images/banded/omaha/choco.png';
+import omaha_dark_cherry from './../assets/images/banded/omaha/dark_cherry.png';
+import omaha_green from './../assets/images/banded/omaha/green.png';
+import omaha_grey from './../assets/images/banded/omaha/grey.png';
+import omaha_ivory from './../assets/images/banded/omaha/ivory.png';
+import omaha_khaki from './../assets/images/banded/omaha/khaki.png';
+import omaha_mushroom from './../assets/images/banded/omaha/mushroom.png';
+import omaha_natural_lemon from './../assets/images/banded/omaha/natural_lemon.png';
+import omaha_natural_white from './../assets/images/banded/omaha/natural_white.png';
+import omaha_natural_wine from './../assets/images/banded/omaha/natural_wine.png';
+import omaha_olive from './../assets/images/banded/omaha/olive.png';
+import omaha_peach from './../assets/images/banded/omaha/peach.png';
+import omaha_pearl_grey from './../assets/images/banded/omaha/pearl_grey.png';
+import omaha_pink from './../assets/images/banded/omaha/pink.png';
+import omaha_sage from './../assets/images/banded/omaha/sage.png';
+import omaha_sky_blue from './../assets/images/banded/omaha/sky_blue.png';
+import omaha_teak from './../assets/images/banded/omaha/teak.png';
+import omaha_white from './../assets/images/banded/omaha/white.png';
+import omaha_wood_gold from './../assets/images/banded/omaha/wood_gold.png';
+import omaha_wood_grey from './../assets/images/banded/omaha/wood_grey.png';
+import omaha_wood_white from './../assets/images/banded/omaha/wood_white.png';
+import crosse from './../assets/images/banded/crosse/crosse.png';
+import crosse_ash from './../assets/images/banded/crosse/ash.png';
+import crosse_baltic from './../assets/images/banded/crosse/baltic.png';
+import crosse_beige from './../assets/images/banded/crosse/beige.png';
+import crosse_black_and_white from './../assets/images/banded/crosse/black_and_white.png';
+import crosse_black from './../assets/images/banded/crosse/black.png';
+import crosse_brown from './../assets/images/banded/crosse/brown.png';
+import crosse_caramel from './../assets/images/banded/crosse/caramel.png';
+import crosse_cedar from './../assets/images/banded/crosse/cedar.png';
+import crosse_charcoal from './../assets/images/banded/crosse/charcoal.png';
+import crosse_choco from './../assets/images/banded/crosse/choco.png';
+import crosse_citron from './../assets/images/banded/crosse/citron.png';
+import crosse_coroni_blue from './../assets/images/banded/crosse/coroni_blue.png';
+import crosse_cream from './../assets/images/banded/crosse/cream.png';
+import crosse_dark_blue from './../assets/images/banded/crosse/dark_blue.png';
+import crosse_dark_green from './../assets/images/banded/crosse/dark_green.png';
+import crosse_dark_grey from './../assets/images/banded/crosse/dark_grey.png';
+import crosse_eggplant from './../assets/images/banded/crosse/eggplant.png';
+import crosse_forest from './../assets/images/banded/crosse/forest.png';
+import crosse_green from './../assets/images/banded/crosse/green.png';
+import crosse_grey from './../assets/images/banded/crosse/grey.png';
+import crosse_ice_green from './../assets/images/banded/crosse/ice_green.png';
+import crosse_ice from './../assets/images/banded/crosse/ice.png';
+import crosse_mocha from './../assets/images/banded/crosse/mocha.png';
+import crosse_new_beige from './../assets/images/banded/crosse/new_beige.png';
+import crosse_olive from './../assets/images/banded/crosse/olive.png';
+import crosse_orange from './../assets/images/banded/crosse/orange.png';
+import crosse_orchid from './../assets/images/banded/crosse/orchid.png';
+import crosse_peach from './../assets/images/banded/crosse/peach.png';
+import crosse_pearl from './../assets/images/banded/crosse/pearl.png';
+import crosse_pink from './../assets/images/banded/crosse/pink.png';
+import crosse_purple from './../assets/images/banded/crosse/purple.png';
+import crosse_red from './../assets/images/banded/crosse/red.png';
+import crosse_scarlet from './../assets/images/banded/crosse/scarlet.png';
+import crosse_sky_blue from './../assets/images/banded/crosse/sky_blue.png';
+import crosse_stone_blue from './../assets/images/banded/crosse/stone_blue.png';
+import crosse_storm from './../assets/images/banded/crosse/storm.png';
+import crosse_sunset_gold from './../assets/images/banded/crosse/sunset_gold.png';
+import crosse_taupe from './../assets/images/banded/crosse/taupe.png';
+import crosse_wine from './../assets/images/banded/crosse/wine.png';
+import crosse_yellow from './../assets/images/banded/crosse/yellow.png';
 
 const Catalog = () => {
   const [showAlert1, removeAlert1] = useState(true);
@@ -149,6 +217,98 @@ const Catalog = () => {
 
   const catalog = {
     Banded: [
+      {
+        name: 'Omaha', img: omaha, colors: [
+          { src: omaha_beige, text: 'Beige' },
+          { src: omaha_black, text: 'Black' },
+          { src: omaha_brown, text: 'Brown' },
+          { src: omaha_charcoal, text: 'Charcoal' },
+          { src: omaha_cherry, text: 'Cherry' },
+          { src: omaha_choco, text: 'Choco' },
+          { src: omaha_dark_cherry, text: 'Dark Cherry' },
+          { src: omaha_green, text: 'Green' },
+          { src: omaha_grey, text: 'Grey' },
+          { src: omaha_ivory, text: 'Ivory' },
+          { src: omaha_khaki, text: 'Khaki' },
+          { src: omaha_mushroom, text: 'Mushroom' },
+          { src: omaha_natural_lemon, text: 'Natural Lemon' },
+          { src: omaha_natural_white, text: 'Natural White' },
+          { src: omaha_natural_wine, text: 'Natural Wine' },
+          { src: omaha_olive, text: 'Olive' },
+          { src: omaha_peach, text: 'Peach' },
+          { src: omaha_pearl_grey, text: 'Pearl Grey' },
+          { src: omaha_pink, text: 'Pink' },
+          { src: omaha_sage, text: 'Sage' },
+          { src: omaha_sky_blue, text: 'Sky Blue' },
+          { src: omaha_teak, text: 'Teak Cherry' },
+          { src: omaha_white, text: 'White' },
+          { src: omaha_wood_gold, text: 'Wood Gold' },
+          { src: omaha_wood_grey, text: 'Wood Grey' },
+          { src: omaha_wood_white, text: 'Wood White' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['131g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.41mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'Certain colors',
+          repeatSize: ['Solid 7.5cm / Mesh 5cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'All colors'
+        }
+      },
+      {
+        name: 'Crosse', img: crosse, colors: [
+          { src: crosse_ash, text: 'Ash' },
+          { src: crosse_baltic, text: 'Baltic' },
+          { src: crosse_beige, text: 'Beige' },
+          { src: crosse_black, text: 'Black' },
+          { src: crosse_black_and_white, text: 'Black & White' },
+          { src: crosse_brown, text: 'Brown' },
+          { src: crosse_caramel, text: 'Caramel' },
+          { src: crosse_cedar, text: 'Cedar' },
+          { src: crosse_charcoal, text: 'Charcoal' },
+          { src: crosse_choco, text: 'Choco' },
+          { src: crosse_citron, text: 'Citron' },
+          { src: crosse_coroni_blue, text: 'Coroni Blue' },
+          { src: crosse_cream, text: 'Cream' },
+          { src: crosse_dark_blue, text: 'Dark Blue' },
+          { src: crosse_dark_green, text: 'Dark Green' },
+          { src: crosse_dark_grey, text: 'Dark Grey' },
+          { src: crosse_eggplant, text: 'Eggplant' },
+          { src: crosse_forest, text: 'Forest' },
+          { src: crosse_green, text: 'Green' },
+          { src: crosse_grey, text: 'Grey' },
+          { src: crosse_ice, text: 'Ice' },
+          { src: crosse_ice_green, text: 'Ice Green' },
+          { src: crosse_mocha, text: 'Mocha' },
+          { src: crosse_new_beige, text: 'New Beige' },
+          { src: crosse_olive, text: 'Olive' },
+          { src: crosse_orange, text: 'Orange' },
+          { src: crosse_orchid, text: 'Orchid' },
+          { src: crosse_peach, text: 'Peach' },
+          { src: crosse_pearl, text: 'Pearl' },
+          { src: crosse_pink, text: 'Pink' },
+          { src: crosse_purple, text: 'Purple' },
+          { src: crosse_red, text: 'Red' },
+          { src: crosse_scarlet, text: 'Scarlet' },
+          { src: crosse_sky_blue, text: 'Sky Blue' },
+          { src: crosse_stone_blue, text: 'Stone Blue' },
+          { src: crosse_storm, text: 'Storm' },
+          { src: crosse_sunset_gold, text: 'Sunset Gold' },
+          { src: crosse_taupe, text: 'Taupe' },
+          { src: crosse_wine, text: 'Wine' },
+          { src: crosse_yellow, text: 'Yellow' },
+        ],
+        specs: {
+          composition: '100% Polyester',
+          maxWidth: '280cm',
+          weight: ['114g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
+          thickness: ['0.31mm ', <span key={3}>&plusmn;</span>, '5%'],
+          fireRetardant: 'Certain colors',
+          repeatSize: ['Solid 7.5cm / Mesh 5cm ', <span key={4}>&plusmn;</span>, '5%'],
+          antibacterial: 'All colors'
+        }
+      },
       {
         name: 'Venus', img: venus, colors: [
           { src: venus_baby_blue, text: 'Baby Blue' },
@@ -185,7 +345,7 @@ const Catalog = () => {
           maxWidth: '285cm',
           weight: ['105.3g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
           thickness: ['0.45mm ', <span key={3}>&plusmn;</span>, '5%'],
-          fireRetardant: 'Select colors',
+          fireRetardant: 'Certain colors',
           repeatSize: ['Solid 11.5cm / Mesh 9cm ', <span key={4}>&plusmn;</span>, '5%'],
           antibacterial: 'All colors'
         }
@@ -225,7 +385,7 @@ const Catalog = () => {
           maxWidth: '280cm',
           weight: ['150g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
           thickness: ['Solid 0.35mm', ' / Mesh 0.13mm ', <span key={3}>&plusmn;</span>, '5%'],
-          fireRetardant: 'Select colors',
+          fireRetardant: 'Certain colors',
           repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
           antibacterial: 'N/A'
         }
@@ -264,7 +424,7 @@ const Catalog = () => {
           maxWidth: '280cm',
           weight: ['180g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
           thickness: ['Solid 0.44mm', ' / Mesh 0.14mm ', <span key={3}>&plusmn;</span>, '5%'],
-          fireRetardant: 'Select colors',
+          fireRetardant: 'Certain colors',
           repeatSize: ['Solid 12cm / Mesh 9cm ', <span key={4}>&plusmn;</span>, '5%'],
           antibacterial: 'N/A'
         }
@@ -284,7 +444,7 @@ const Catalog = () => {
           maxWidth: '280cm',
           weight: ['160g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
           thickness: ['0.42mm ', <span key={3}>&plusmn;</span>, '5%'],
-          fireRetardant: 'Select colors',
+          fireRetardant: 'Certain colors',
           repeatSize: ['Solid 10cm / Mesh 6cm ', <span key={4}>&plusmn;</span>, '5%'],
           antibacterial: 'N/A'
         }
@@ -480,7 +640,7 @@ const Catalog = () => {
           maxWidth: '320cm',
           weight: ['118g/m', <sup key={1}>2</sup>, ' ', <span key={2}>&plusmn;</span>, '5%'],
           thickness: ['0.35mm ', <span key={3}>&plusmn;</span>, '5%'],
-          fireRetardant: 'Select colors',
+          fireRetardant: 'Certain colors',
           repeatSize: ['Solid 10cm / Mesh 7cm ', <span key={4}>&plusmn;</span>, '5%'],
           antibacterial: 'N/A'
         }
@@ -512,7 +672,7 @@ const Catalog = () => {
       { name: 'Roller 5', img: 'imgSrc5' },
       { name: 'Roller 6', img: 'imgSrc6' },
     ],
-    'Laser Print': [
+    'Laser Cut': [
       { name: 'Laser Print 1', img: 'imgSrc1' },
       { name: 'Laser Print 2', img: 'imgSrc2' },
       { name: 'Laser Print 3', img: 'imgSrc3' },
@@ -527,6 +687,8 @@ const Catalog = () => {
       { name: 'Graphic 5', img: 'imgSrc5' },
     ]
   };
+
+  console.log(catalog.Banded.length)
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -598,11 +760,13 @@ const Catalog = () => {
                     key={`banded_tab_img_${index}`}
                   >
                     <div className='tab_container'>
-                      <img
-                        className='tab_image'
-                        src={style.img}
-                        alt={'banded_' + index}
-                      />
+                      <div className='tab_image_container'>
+                        <img
+                          className='tab_image'
+                          src={style.img}
+                          alt={'banded_' + index}
+                        />
+                      </div>
                       <div className='tab_info_container'>
                         <div className='specs_container'>
                           <div className='spec_key'>Composition:</div>
@@ -688,7 +852,7 @@ const Catalog = () => {
                   Variation:
                 </Tab>
                 { // render Laser style variations
-                  catalog['Laser Print'].map((style, index) => (
+                  catalog['Laser Cut'].map((style, index) => (
                     <Tab
                       className='react-tabs__tab sub_tab'
                       key={`laser_tab_${index}`}
@@ -701,7 +865,7 @@ const Catalog = () => {
               <TabPanel>
               </TabPanel>
               { // render Laser style images
-                catalog['Laser Print'].map((style, index) => (
+                catalog['Laser Cut'].map((style, index) => (
                   <TabPanel
                     className='react-tabs__tab-panel'
                     key={`laser_tab_img_${index}`}
