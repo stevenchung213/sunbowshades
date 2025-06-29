@@ -1088,7 +1088,7 @@ const Catalog = () => {
                   className='react-tabs__tab sub_tab tab_category_variation'
                   disabled
                 >
-                  Variation:
+                  Model:
                 </Tab>
                 { // render Roller style models
                   catalog.Roller.map((style, index) => (
@@ -1155,7 +1155,7 @@ const Catalog = () => {
                   className='react-tabs__tab sub_tab tab_category_variation'
                   disabled
                 >
-                  Variation:
+                  Model:
                 </Tab>
                 { // render Laser style variations
                   catalog['Laser Roll'].map((style, index) => (
@@ -1199,7 +1199,7 @@ const Catalog = () => {
                   className='react-tabs__tab sub_tab tab_category_variation'
                   disabled
                 >
-                  Variation:
+                  Model:
                 </Tab>
                 { // render Graphic style variations
                   catalog['Graphic Print'].map((style, index) => (
