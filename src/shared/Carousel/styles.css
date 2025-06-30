@@ -657,6 +657,10 @@
     margin-bottom: 0;
   }
 
+  .laser_colors_embla {
+    padding-right: 2.5rem;
+  }
+
   .laser_colors_embla__slide {
     display: flex;
     flex-direction: column;
@@ -675,5 +679,10 @@
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 0.9rem;
+  }
+
+  .laser_embla__button {
+    width: 3rem;
+    height: 3rem;
   }
 }

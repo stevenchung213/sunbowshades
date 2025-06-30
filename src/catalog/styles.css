@@ -239,6 +239,25 @@
   margin-right: 4rem;
 }
 
+.graphic_tab_info_container {
+  width: 40%;
+  min-width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.graphic_specs_container {
+  width: 100%;
+  text-align: center;
+  margin-top: 45%;
+  color: rgb(90, 89, 89);
+  line-height: 1.75rem;
+  font-size: 1.15rem;
+}
+
 
 @media only screen and (max-width: 768px) {
   #catalog_container {
@@ -402,4 +421,20 @@
     padding-left: 1.5rem;
   }
 
+  .graphic_tab_info_container {
+    width: 100%;
+    position: static;
+    padding-bottom: 0;
+    padding-right: 1.65rem;
+  }
+
+  .graphic_specs_container {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    color: rgb(90, 89, 89);
+    line-height: 1.15rem;
+    font-size: 0.85rem;
+  }
 }
