@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
-import facebook from './../assets/facebook.png';
-import instagram from './../assets/instagram.png';
-import tiktok from './../assets/tiktok.png';
+import facebook from './../assets/icons/facebook.png';
+import instagram from './../assets/icons/instagram.png';
+import tiktok from './../assets/icons/tiktok.png';
 import './styles.css';
 
 const Footer = ({ isMobile }) => {

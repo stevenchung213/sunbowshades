@@ -1,9 +1,9 @@
 import React, { isValidElement } from 'react';
 import { useRef, useEffect, useState } from "react";
 import PhoneInput from 'react-phone-number-input/input'
-import { isPossiblePhoneNumber, isValidPhoneNumber } from 'react-phone-number-input';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 import emailjs from "@emailjs/browser";
-import quote2 from './../assets/quote2.png';
+import quote from './../assets/images/contact_image.png';
 import './styles.css';
 
 const Contact = () => {
@@ -67,7 +67,7 @@ const Contact = () => {
   return (
     <div id='contact_container'>
       <div className='contact_section'>
-        <img src={quote2} alt='contact' className='contact_image' />
+        <img src={quote} alt='contact' className='contact_image' />
         <section className='form_container'>
           <form className="form" onSubmit={handleSubmit}>
             <div className="form_group">

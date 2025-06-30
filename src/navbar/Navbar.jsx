@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link, NavLink } from 'react-router';
-import logo from './../assets/logo.png';
-import hamburger from './../assets/nav.svg';
+import logo from './../assets/logos/logo.png';
+import hamburger from './../assets/misc/nav.svg';
 import { useClickOutside } from './../shared/hooks/helpers'
 import './styles.css';
 

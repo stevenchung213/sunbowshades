@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css';
-import downArrow from './../assets/down_arrow.png';
+import downArrow from './../assets/misc/down_arrow.png';
 
 const Faqs = () => {
   const showAnswer1 = useState(false);

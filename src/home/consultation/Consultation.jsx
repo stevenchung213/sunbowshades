@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 import './styles.css';
-import quote1 from './../../assets/quote1.png';
+import quote1 from './../../assets/images/quote_image.png';
 
 const Consultation = () => {
 

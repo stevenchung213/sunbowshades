@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import about1 from './../assets/background1_sm.jpg';
+import about1 from './../assets/images/about_image.png';
 
 const About = ({ isMobile }) => {
 

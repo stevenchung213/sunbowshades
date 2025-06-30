@@ -9,7 +9,7 @@
 .cover_photo {
   width: 100%;
   max-width: 100%;
-  background-image: url('./../assets/stock1.png');
+  background-image: url('./../assets/images/home_bg.png');
   background-size: cover;
   margin-bottom: 2rem;
   box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
@@ -64,7 +64,7 @@
   .cover_photo {
     width: 100%;
     max-width: 100%;
-    background-image: url('./../assets/stock3_mobile.png');
+    background-image: url('./../assets/images/home_bg_mobile.png');
     background-size: fit;
     height: auto;
   }

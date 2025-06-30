@@ -1,12 +1,9 @@
 import React from 'react';
 import './styles.css';
-import showcase1 from './../../assets/showcase1.jpeg';
-import showcase2 from './../../assets/showcase2.jpeg';
-import showcase3 from './../../assets/showcase3.jpeg';
-import qualityIcon from './../../assets/quality_icon.png';
-import antibacterialIcon from './../../assets/antibacterial_icon_2.png';
-import labicon from './../../assets/lab_icon_2.png';
-import uvIcon from './../../assets/uv_icon.png';
+import qualityIcon from './../../assets/icons/quality_icon.png';
+import antibacterialIcon from './../../assets/icons/antibacterial_icon.png';
+import labicon from './../../assets/icons/lab_icon.png';
+import uvIcon from './../../assets/icons/uv_icon.png';
 
 const Quality = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
-import corp1 from './../../assets/corporate1.png';
-import corp2 from './../../assets/corporate2.png';
+import corp1 from './../../assets/images/corporate1.png';
+import corp2 from './../../assets/images/corporate2.png';
 
 const CommercialShowcase = ({ isMobile }) => {
 
