@@ -32,6 +32,8 @@
   background-color: rgb(247, 247, 247);
   border-radius: 8px;
   margin: auto;
+  width: 100%;
+  max-width: 100%;
 }
 
 .react-tabs {
@@ -201,6 +203,43 @@
   margin-bottom: 2rem;
 }
 
+/* Laser / Graphic tab styling */
+.laser_tab_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+}
+
+.laser_tab_info_container {
+  width: 40%;
+  min-width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.laser_specs_container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 30%;
+  color: rgb(90, 89, 89);
+  line-height: 1.75rem;
+  font-size: 1.15rem;
+}
+
+.laser_colors_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-right: 4rem;
+}
+
+
 @media only screen and (max-width: 768px) {
   #catalog_container {
     display: flex;
@@ -255,12 +294,6 @@
     font-size: 0.8rem;
     font-weight: 400;
   }
-
-  /* .tab_container {
-    display: flex;
-    flex-direction: column;
-    padding: 0.2rem;
-  } */
 
   .tab_container {
     display: grid;
@@ -337,6 +370,36 @@
 
   .colors_embla__controls {
     margin-top: 0.5rem;
+  }
+
+  .laser_tab_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .laser_tab_info_container {
+    width: 100%;
+    position: static;
+    padding-bottom: 0;
+    padding-right: 1.65rem;
+  }
+
+  .laser_specs_container {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    color: rgb(90, 89, 89);
+    line-height: 1.15rem;
+    font-size: 0.85rem;
+  }
+
+  .laser_colors_container {
+    position: static;
+    width: 100%;
+    padding-left: 1.5rem;
   }
 
 }

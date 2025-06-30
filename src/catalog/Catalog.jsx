@@ -300,7 +300,33 @@ import yap_grey from './../assets/images/roller/yap/grey.png';
 import yap_ivory from './../assets/images/roller/yap/ivory.png';
 import yap_sand from './../assets/images/roller/yap/sand.png';
 import yap_white from './../assets/images/roller/yap/white.png';
-
+import laser_butterfly from './../assets/images/laser_print/butterfly.png';
+import laser_cactus from './../assets/images/laser_print/cactus.png';
+import laser_carousel from './../assets/images/laser_print/carousel.png';
+import laser_chandelier from './../assets/images/laser_print/chandelier.png';
+import laser_city_view from './../assets/images/laser_print/city_view.png';
+import laser_cloud from './../assets/images/laser_print/cloud.png';
+import laser_coffee_tree from './../assets/images/laser_print/coffee_tree.png';
+import laser_dinosaur from './../assets/images/laser_print/dinosaur.png';
+import laser_eiffel_tower from './../assets/images/laser_print/eiffel_tower.png';
+import laser_heart from './../assets/images/laser_print/heart.png';
+import laser_hello_bear from './../assets/images/laser_print/hello_bear.png';
+import laser_moon_and_rabbit from './../assets/images/laser_print/moon_and_rabbit.png';
+import laser_moons from './../assets/images/laser_print/moons.png';
+import laser_spaceship from './../assets/images/laser_print/spaceship.png';
+import laser_troy from './../assets/images/laser_print/troy.png';
+import laser_whale from './../assets/images/laser_print/whale.png';
+import laser_world_map from './../assets/images/laser_print/world_map.png';
+import laser_beige from './../assets/images/laser_print/beige.png';
+import laser_charcoal from './../assets/images/laser_print/charcoal.png';
+import laser_green from './../assets/images/laser_print/green.png';
+import laser_grey from './../assets/images/laser_print/grey.png';
+import laser_ivory from './../assets/images/laser_print/ivory.png';
+import laser_navy from './../assets/images/laser_print/navy.png';
+import laser_pink from './../assets/images/laser_print/pink.png';
+import laser_watermelon from './../assets/images/laser_print/watermelon.png';
+import laser_white from './../assets/images/laser_print/white.png';
+import laser_wine from './../assets/images/laser_print/wine.png';
 
 const Catalog = () => {
   const [showAlert1, removeAlert1] = useState(true);
@@ -957,13 +983,39 @@ const Catalog = () => {
         }
       },
     ],
-    'Laser Roll': [
-      { name: 'Laser Print 1', img: 'imgSrc1' },
-      { name: 'Laser Print 2', img: 'imgSrc2' },
-      { name: 'Laser Print 3', img: 'imgSrc3' },
-      { name: 'Laser Print 4', img: 'imgSrc4' },
-      { name: 'Laser Print 5', img: 'imgSrc5' },
-    ],
+    'Laser Cut': {
+      images: [
+        { src: laser_butterfly, text: 'Butterfly' },
+        { src: laser_cactus, text: 'Cactus' },
+        { src: laser_carousel, text: 'Carousel' },
+        { src: laser_chandelier, text: 'Chandelier' },
+        { src: laser_city_view, text: 'City View' },
+        { src: laser_cloud, text: 'Cloud' },
+        { src: laser_coffee_tree, text: 'Coffee Tree' },
+        { src: laser_dinosaur, text: 'Dinosaur' },
+        { src: laser_eiffel_tower, text: 'Eiffel Tower' },
+        { src: laser_heart, text: 'Heart' },
+        { src: laser_hello_bear, text: 'Hello Bear' },
+        { src: laser_moon_and_rabbit, text: 'Moon & Rabbit' },
+        { src: laser_moons, text: 'Moons' },
+        { src: laser_spaceship, text: 'Spaceship' },
+        { src: laser_troy, text: 'Troy' },
+        { src: laser_whale, text: 'Whale' },
+        { src: laser_world_map, text: 'World Map' },
+      ],
+      colors: [
+        { src: laser_beige, text: 'Beige' },
+        { src: laser_charcoal, text: 'Charcoal' },
+        { src: laser_green, text: 'Green' },
+        { src: laser_grey, text: 'Grey' },
+        { src: laser_ivory, text: 'Ivory' },
+        { src: laser_navy, text: 'Navy' },
+        { src: laser_pink, text: 'Pink' },
+        { src: laser_watermelon, text: 'Watermelon' },
+        { src: laser_white, text: 'White' },
+        { src: laser_wine, text: 'Wine' },
+      ]
+    },
     'Graphic Print': [
       { name: 'Graphic 1', img: 'imgSrc1' },
       { name: 'Graphic 2', img: 'imgSrc2' },
@@ -1148,49 +1200,30 @@ const Catalog = () => {
               }
             </Tabs>
           </TabPanel>
-          <TabPanel>
-            <Tabs defaultIndex={1}>
-              <TabList>
-                <Tab
-                  className='react-tabs__tab sub_tab tab_category_variation'
-                  disabled
-                >
-                  Model:
-                </Tab>
-                { // render Laser style variations
-                  catalog['Laser Roll'].map((style, index) => (
-                    <Tab
-                      className='react-tabs__tab sub_tab'
-                      key={`laser_tab_${index}`}
-                    >
-                      {style.name}
-                    </Tab>
-                  ))
-                }
-              </TabList>
-              <TabPanel>
-              </TabPanel>
-              { // render Laser style images
-                catalog['Laser Roll'].map((style, index) => (
-                  <TabPanel
-                    className='react-tabs__tab-panel'
-                    key={`laser_tab_img_${index}`}
-                  >
-
-                    <div className='tab_container'>
-                      <img
-                        className='tab_image'
-                        src={style.img}
-                        alt={'banded_' + index}
-                      />
-                      <div className='tab_info_container'>
-
-                      </div>
-                    </div>
-                  </TabPanel>
-                ))
-              }
-            </Tabs>
+          <TabPanel className='react-tabs__tab-panel'>
+            { // render Laser style images
+              <div className='laser_tab_container'>
+                <Carousel
+                  slides={catalog['Laser Cut'].images}
+                  options={carouselOptions}
+                  identifier='laser'
+                />
+                <div className='laser_tab_info_container'>
+                  <div className='laser_specs_container'>
+                    Choose one of our patterns for a catered experience!
+                    <br />
+                    Check with your local expert which roller fabrics qualify.
+                  </div>
+                  <div className='laser_colors_container'>
+                    <Carousel
+                      slides={catalog['Laser Cut'].colors}
+                      options={carouselOptions}
+                      identifier='laser_colors'
+                    />
+                  </div>
+                </div>
+              </div>
+            }
           </TabPanel>
           <TabPanel>
             <Tabs defaultIndex={1}>
