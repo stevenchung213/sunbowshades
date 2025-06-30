@@ -3,7 +3,7 @@ import Loading from './../shared/Loading/Loading';
 import './styles.css';
 
 const Quality = lazy(() => import('./quality/Quality'));
-const Consultation = lazy(() => import('./consultation/Consultation2'));
+const Consultation = lazy(() => import('./consultation/Consultation'));
 const Showcase = lazy(() => import('./showcase/Showcase'));
 const CommercialShowcase = lazy(() => import('./showcase/CommercialShowcase'));
 

@@ -1218,7 +1218,7 @@ const Catalog = () => {
                 />
                 <div className='laser_tab_info_container'>
                   <div className='laser_specs_container'>
-                    Choose one of our lasert cut patterns for a unique experience!
+                    Choose one of our laser cut patterns for a unique experience!
                     <br />
                     <br />
                     Ask your local expert for newly released patterns and which fabrics qualify.

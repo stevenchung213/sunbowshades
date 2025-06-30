@@ -1,61 +1,33 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 import './styles.css';
-import stock5 from './../../assets/stock5.jpeg';
-import showcase7 from './../../assets/showcase7.jpeg';
+import quote1 from './../../assets/quote1.png';
 
 const Consultation = () => {
 
   return (
     <div id='consultation_container'>
       <div id='consultation_banner' className='banner'>
-        Free In-home Consultation
+        REQUEST A FREE QUOTE
       </div>
-      <div className='our_model_container'>
-        <div className='what_we_do'>
-          <div className='our_experts_provide'>
-            Our experts provide...
-          </div>
-          <ol>
-            <li>
-              Recommendations for window treatment styles along with colors
-            </li>
-            <li>
-              Precise measurements down to the millimeter (1/25") versus competitors (1/16")
-            </li>
-            <li>
-              Quick and clean installation
-            </li>
-          </ol>
-          <div className='fine_print'>
-          </div>
-        </div>
-        <img
-          src={showcase7}
-          className='our_team_will_photo'
-          alt='stock5'
-        />
-        <div className='service_areas'>
-          <div className='areas_of_service'>
-            We currently service...
-          </div>
-          <li>Southern California</li>
-          <li>
-            Portland
-          </li>
-          <li>
-            Seattle
-          </li>
-          <li>
-            Las Vegas
-          </li>
-          {/* <li>
-              Houston
-            </li> */}
-          <div className='fine_print'>
-            We plan on expanding to other states soon!
-          </div>
+      <div className='consultation_section'>
+        <img src={quote1} alt='consultation' className='consultation_image' />
+        <div className='consultation_info'>
+          Experience the difference with our free in-home consultation!
+          <br />
+          Our local expert will visit your home to provide personalized advice and tailored solutions for your window treatment needs.
         </div>
       </div>
+      <NavLink
+        to='contact'
+      >
+        <button
+          id='consultation_button'
+          className='navbar_contact_button'
+        >
+          I'm Interested!
+        </button>
+      </NavLink>
     </div>
   );
 };
